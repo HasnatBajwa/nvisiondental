@@ -1,0 +1,52 @@
+:root {
+    --light-pink: rgb(255, 232, 233);
+    --primary-red: rgb(209, 0, 75);
+    --dark-pink: rgb(209, 0, 75);
+    --light-grey: rgb(235, 236, 240);
+    --dark-grey: rgb(73, 80, 87);
+    --medium-grey:rgb(73, 80, 87);
+    --primary-black:rgb(73, 80, 87);
+    --smoke-white:rgb(245, 245, 245);
+    --primary-white:rgb(255, 255, 255);
+  }
+  .nav-container{
+    background-color: var(--primary-white);
+    padding: 0.5% 0% 0.5% 0%;
+  }
+  .company-logo{
+    width: 25%;
+    cursor: pointer;
+    padding-left: 10%;
+   
+  }
+  .nav-link-container{
+    margin-top: 3%;
+    text-align: center;
+  }
+  .nav-links{
+    margin: 2%;
+    color: var(--dark-grey);
+    cursor: pointer;
+    font-weight: 600;
+   
+  
+  }
+  .nav-links:hover{
+    color: var(--dark-pink);
+  }
+  /* Mobile Responsive Styles */
+  @media only screen and (max-device-width: 768px) {
+
+    .company-logo{
+        display: block;
+        margin: auto;
+        padding: 0;
+    }
+    .nav-link-container{
+       padding: 1% 2% 1% 2%;
+       text-align: center;
+    }
+    .nav-links{
+        text-align: center;
+    }
+  }
