@@ -14,7 +14,7 @@
   padding: 2%;
 }
 .intro-txt-container {
-  padding: 10% 15% 10% 10%;
+  padding: 5% 10% 5% 10%;
 }
 .intro-heading {
   color: var(--medium-grey);
@@ -24,7 +24,7 @@
   color: var(--primary-red);
 }
 .intro-img {
-  width: 60%;
+  width: 30%;
   display: block;
   margin: auto;
   border-radius: 10px;

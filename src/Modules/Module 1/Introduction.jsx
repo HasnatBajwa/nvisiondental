@@ -13,7 +13,8 @@ const Introduction = () => {
                                 Welcome To The <span className="title">N VISION DENTAL </span> Laboratory!
                             </h1>
                             <p className="intro-txt">
-                            We are a fully digital dental laboratory. <span className="title">N VISION DENTAL</span> is a full service PRIVATE LAB specializing in implants, Crown & Bridge, All ceramic, Aligners, etc.
+                                We are a fully digital dental laboratory. <span className="title">N VISION DENTAL </span> 
+                                is a full service PRIVATE LAB specializing in implants, Crown & Bridge, All ceramic, Aligners, etc.
                             </p>
                         </div>
                     </Grid>
