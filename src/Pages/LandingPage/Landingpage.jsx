@@ -5,7 +5,9 @@ import Nav from '../../Components/Nav/Nav';
 import Header from '../../Components/Header/Header'
 import Products from '../../Modules/Module 3/Products';
 import Experience from '../../Modules/Module 4/Experience';
-
+import Clientale from '../../Modules/Module 5/Clientale';
+import Vision from '../../Modules/Module 6/Vision';
+import Footer from '../../Components/Footer/Footer';
 const Landingpage = () => {
     return (
         <>
@@ -15,7 +17,9 @@ const Landingpage = () => {
             <ServicesModule />
             <Products />
             <Experience />
-            {/* <Footer /> */}
+            <Clientale />
+            <Vision />
+            <Footer />
         </>
     )
 }

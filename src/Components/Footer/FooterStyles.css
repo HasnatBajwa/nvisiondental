@@ -1,0 +1,39 @@
+:root {
+  --light-pink: rgb(255, 232, 233);
+  --primary-red: rgb(209, 0, 75);
+  --dark-pink: rgb(209, 0, 75);
+  --light-grey: rgb(235, 236, 240);
+  --dark-grey: rgb(73, 80, 87);
+  --medium-grey: rgb(73, 80, 87);
+  --primary-black: rgb(73, 80, 87);
+  --smoke-white: rgb(245, 245, 245);
+  --primary-white: rgb(255, 255, 255);
+}
+.footer-container {
+  background-color: var(--light-pink);
+  padding: 1% 5% 1% 5%;
+}
+.end-footer-container {
+  background-color: black;
+  padding: 1%;
+  text-align: center;
+}
+.end-footer {
+  color: var(--smoke-white);
+}
+.footer-title{
+    color: var(--primary-red);
+}
+.footer-txt{
+    color: var(--medium-grey);
+    font-weight: 600;
+}
+/* Mobile Responsive Setting */
+@media only screen and (max-device-width: 768px) {
+    .footer-icon{
+        width: 50%;
+    }
+  .end-footer-container {
+    font-size: 8px;
+  }
+}

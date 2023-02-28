@@ -9,8 +9,41 @@
     --smoke-white: rgb(245, 245, 245);
     --primary-white: rgb(255, 255, 255);
   }
+.clientale-container{
+    padding: 5% 15% 5% 15%;
+    background: url(../../Assets/clientale.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.clientale-txt-container{
+    margin-bottom: 10%
+}
+.clientale-heading{
+    text-align: center;
+    color: var(--smoke-white);
 
+}
+.clientale-txt{
+    text-align: center;
+    color: var(--light-grey);
+}
+.clientale-title{
+    font-size: 35px;
+    color: var(--primary-red);
+    font-weight: 600;
+}
 
-  
 /* Mobile Responsive Settings */
-@media only screen and (max-device-width: 768px){}
+@media only screen and (max-device-width: 768px){
+    .clientale-heading{
+        font-size: 14px;
+    }
+    .clientale-txt{
+        font-size: 10px;
+    }
+    .clientale-title{
+        font-size: 20px;
+    }
+}
