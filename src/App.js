@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     AOS.init({
       duration:1500,
-      delay:1500,
+      delay:200,
     })
   }, [])
   

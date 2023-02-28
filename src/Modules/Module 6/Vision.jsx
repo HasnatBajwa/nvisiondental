@@ -8,7 +8,7 @@ const Vision = () => {
             <div className="vision-container">
                 <Grid container justifyContent={'center'} spacing={3}>
                     <Grid item xs={6} sm={6} md={6} lg={6}>
-                        <div className="vision-card">
+                        <div data-aos='fade-right' className="vision-card">
                             <h1 className="vision-title">
                                 OUR VISSION
                             </h1>
@@ -19,7 +19,7 @@ const Vision = () => {
                         </div>
                     </Grid>
                     <Grid item xs={6} sm={6} md={6} lg={6}>
-                        <div className="mission-card">
+                        <div data-aos='fade-left' className="mission-card">
                         <h1 className="vision-title">
                                 OUR MISSION
                             </h1>
