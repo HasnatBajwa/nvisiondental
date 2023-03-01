@@ -22,7 +22,7 @@ const Experience = () => {
                         </div>
                     </Grid>
                     <Grid item xs={6} sm={6} md={6} lg={4}>
-                            <img src={Dental} alt="" className="experience-img" />
+                            <img data-aos='fade-left' src={Dental} alt="" className="experience-img" />
                     </Grid>
                 </Grid>
             </div>
