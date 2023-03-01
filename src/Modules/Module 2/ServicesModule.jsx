@@ -16,7 +16,7 @@ const ServicesModule = () => {
                             </Grid>
                             <Grid item xs={6} sm={6} md={6} lg={6}>
                                 <h3 className="service-heading">
-                                    TEETH ALIGNERS
+                                    ALIGNERS
                                 </h3>
                                 <p className="service-txt">
                                     Aligners are the closest you can get to healthy, beautiful and natural teeth.

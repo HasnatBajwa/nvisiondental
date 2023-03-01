@@ -1,7 +1,7 @@
 import React from 'react'
 import './IntroductionStyles.css'
 import { Grid } from '@mui/material';
-import Intro from '../../Assets/intro.jpg'
+import Intro from '../../Assets/Intro.avif'
 const Introduction = () => {
     return (
         <>
