@@ -10,7 +10,7 @@
   --primary-white: rgb(255, 255, 255);
 }
 .footer-container {
-  background-color: var(--primary-blue);
+  background-color: var(--green);
   padding: 1% 5% 1% 5%;
 }
 .end-footer-container {

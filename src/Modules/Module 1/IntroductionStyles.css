@@ -10,18 +10,18 @@
   --primary-white: rgb(255, 255, 255);
 }
 .introduction-container {
-  background-color: var(--smoke-white);
+  background-color: var(--light-grey);
   padding: 2%;
 }
 .intro-txt-container {
-  padding: 5% 10% 5% 10%;
+  padding: 5% 20% 5% 20%;
 }
 .intro-heading {
   color: var(--dark-grey);
-  font-size: 40px;
+  font-size: 30px;
 }
 .title {
-  color: var(--primary-blue);
+  color: var(--green);
   font-weight: 600;
 }
 .intro-img {
