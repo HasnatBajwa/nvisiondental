@@ -1,0 +1,20 @@
+:root {
+    --primary-red: #7c1034;
+    --primary-black: #000000;
+    --primary-blue: #29354a;
+    --white: #f2f4f8;
+    --medium-grey: #5c5c5c;
+    --dark-grey: #141414;
+    --gradient:linear-gradient(90deg, rgba(124,16,52,1) 15%, rgba(41,53,74,1) 90%);
+  }
+ 
+  .heading-title{
+    display: block;
+    margin: auto;
+    background: var(--gradient);
+    width: fit-content;
+    padding: 15px;
+    border-radius: 50px;
+    color: var(--white);
+    text-align: center;
+  }

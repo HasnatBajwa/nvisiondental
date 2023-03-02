@@ -1,11 +1,12 @@
 import React from 'react'
 import { Grid } from '@mui/material'
 import './ClientaleStyles.css'
-
+import HeadingTitle from '../../Components/HeadingTitle/HeadingTitle';
 const Clientale = () => {
     return (
         <>
             <div className="clientale-container">
+                <HeadingTitle name={"Our Facts"} />
                 <Grid container justifyContent={'center'}>
                     <Grid item xs={12} sm={12} md={12} lg={12}>
                         <div className="clientale-txt-container">

@@ -20,12 +20,14 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 10%;
   border-radius: 10px;
+  margin-top: 5%;
 }
 .mission-card {
   background-color: var(--dark-grey);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 10%;
   border-radius: 10px;
+  margin-top: 5%;
 }
 .vision-title {
   background: var(--gradient);
@@ -42,6 +44,7 @@
   width: fit-content;
   font-weight: 1000;
 }
+
 .vision-txt {
   margin-top: 5%;
   color: var(--white);
