@@ -1,28 +1,35 @@
 :root {
-  --green: #7C1034;
-  --blue: rgb(103, 108, 184);
-  --primary-blue: rgb(54, 149, 204);
-  --light-grey: rgb(243, 244, 246);
-  --dark-grey: rgb(31, 41, 55);
-  --medium-grey: rgb(229, 231, 235);
-  --primary-black: rgb(0, 0, 0);
-  --smoke-white: rgb(255, 255, 255);
-  --primary-white: rgb(255, 255, 255);
+  --primary-red: #7c1034;
+  --primary-black: #000000;
+  --primary-blue: #29354a;
+  --white: #f2f4f8;
+  --medium-grey: #5c5c5c;
+  --dark-grey: #141414;
+  --gradient:linear-gradient(90deg, rgba(124,16,52,1) 15%, rgba(41,53,74,1) 90%);
 }
 .introduction-container {
-  background-color: var(--light-grey);
-  padding: 2%;
+  background: url(../../Assets/clientale.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 12% 5% 12% 5%;
 }
 .intro-txt-container {
-  padding: 5% 20% 5% 20%;
+  /* padding: 5% 20% 5% 20%; */
 }
 .intro-heading {
-  color: var(--dark-grey);
-  font-size: 30px;
+  color: var(--white);
+  font-size: 50px;
+  text-align: center;
 }
 .title {
-  color: var(--green);
-  font-weight: 600;
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+  font-weight: 900;
+  font-size: larger;
 }
 .intro-img {
   width: 30%;
@@ -31,21 +38,22 @@
   border-radius: 10px;
 }
 .intro-txt {
-  color: var(--dark-grey);
+  color: var(--white);
   margin-top: 2%;
+  text-align: center;
 }
 /* Mobile Responsive Settings */
-@media only screen and (max-device-width: 768px){
-    .intro-txt-container{
-        padding: 2%;
-    }
-    .intro-heading{
-        font-size: 20px;
-        padding: 0%;
-        text-align: center;
-    }
-    .intro-txt{
-        font-size: 10px;
-        text-align: center;
-    }
+@media only screen and (max-device-width: 768px) {
+  .intro-txt-container {
+    padding: 2%;
+  }
+  .intro-heading {
+    font-size: 20px;
+    padding: 0%;
+    text-align: center;
+  }
+  .intro-txt {
+    font-size: 10px;
+    text-align: center;
+  }
 }

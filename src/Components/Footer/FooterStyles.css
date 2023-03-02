@@ -1,16 +1,13 @@
 :root {
-  --green: #7C1034;
-  --blue: rgb(103, 108, 184);
-  --primary-blue: rgb(54, 149, 204);
-  --light-grey: rgb(243, 244, 246);
-  --dark-grey: rgb(31, 41, 55);
-  --medium-grey: rgb(229, 231, 235);
-  --primary-black: rgb(0, 0, 0);
-  --smoke-white: rgb(255, 255, 255);
-  --primary-white: rgb(255, 255, 255);
+  --primary-red: #7c1034;
+  --primary-black: #000000;
+  --primary-blue: #29354a;
+  --white: #f2f4f8;
+  --medium-grey: #5c5c5c;
+  --dark-grey: #141414;
 }
 .footer-container {
-  background-color: var(--green);
+  background-color: var(--primary-red);
   padding: 1% 5% 1% 5%;
 }
 .end-footer-container {
@@ -19,20 +16,21 @@
   text-align: center;
 }
 .end-footer {
-  color: var(--smoke-white);
+  color: var(--white);
 }
-.footer-title{
-    color: var(--dark-grey);
+.footer-title {
+  color: var(--dark-grey);
 }
-.footer-txt{
-    color: var(--medium-grey);
-    font-weight: 600;
+.footer-txt {
+  color: var(--white);
+  font-weight: 600;
+  font-size: small;
 }
 /* Mobile Responsive Setting */
 @media only screen and (max-device-width: 768px) {
-    .footer-icon{
-        width: 50%;
-    }
+  .footer-icon {
+    width: 50%;
+  }
   .end-footer-container {
     font-size: 8px;
   }

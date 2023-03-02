@@ -13,7 +13,7 @@ const Vision = () => {
                                 OUR VISSION
                             </h1>
                             <p className="vision-txt">
-                                <span className="title">N VISION DENTAL</span> is 
+                                <span className="mission-title">N VISION DENTAL</span> is 
                                 an industry leading provider of high-quality dental laboratory products and services to dental professionals world-wide.
                             </p>
                         </div>
@@ -24,7 +24,7 @@ const Vision = () => {
                                 OUR MISSION
                             </h1>
                             <p className="vision-txt">
-                                <span className="title">Our Mission</span> is 
+                                <span className="mission-title">Our Mission</span> is 
                                to assist you in progressing to digital dentistry and move with the future of dentistry and increase business over the globe
                             </p>
                         </div>

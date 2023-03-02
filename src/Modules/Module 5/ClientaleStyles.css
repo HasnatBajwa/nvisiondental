@@ -1,13 +1,11 @@
 :root {
-    --green: #7C1034;
-    --blue: rgb(103, 108, 184);
-    --primary-blue: rgb(54, 149, 204);
-    --light-grey: rgb(243, 244, 246);
-    --dark-grey: rgb(31, 41, 55);
-    --medium-grey: rgb(229, 231, 235);
-    --primary-black: rgb(0, 0, 0);
-    --smoke-white: rgb(255, 255, 255);
-    --primary-white: rgb(255, 255, 255);
+    --primary-red: #7c1034;
+    --primary-black: #000000;
+    --primary-blue: #29354a;
+    --white: #f2f4f8;
+    --medium-grey: #5c5c5c;
+    --dark-grey: #141414;
+    --gradient:linear-gradient(90deg, rgba(124,16,52,1) 15%, rgba(41,53,74,1) 90%);
   }
 .clientale-container{
     padding: 5% 15% 5% 15%;
@@ -22,12 +20,12 @@
 }
 .clientale-heading{
     text-align: center;
-    color: var(--smoke-white);
+    color: var(--white);
 
 }
 .clientale-txt{
+    color: var(--white);
     text-align: center;
-    color: var(--light-grey);
 }
 .clientale-title{
     font-size: 35px;

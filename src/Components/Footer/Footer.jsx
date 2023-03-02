@@ -15,8 +15,9 @@ const Footer = () => {
                             Contact Us
                         </h3>
                         <p className="footer-txt">
-                            0311-26*****  <br />
-                            041-26******
+                            +92-300-4601314 <br />
+                            +92-333-4601314 <br />
+                            +92-41-8555333
                         </p>
                     </Grid>
                     <Grid item xs={2} sm={2} md={2} lg={2}>
@@ -24,7 +25,7 @@ const Footer = () => {
                             Location
                         </h3>
                         <p className="footer-txt">
-                            38000 Faisalabad,<br /> Punjab Pakistan
+                            P-369 Street-2 ,Block B Al Najaf Colony<br /> 38000 Faisalabad, Pakistan
                         </p>
                     </Grid>
                     <Grid item xs={2} sm={2} md={2} lg={2}>

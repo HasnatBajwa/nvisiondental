@@ -8,6 +8,7 @@ import Experience from '../../Modules/Module 4/Experience';
 import Clientale from '../../Modules/Module 5/Clientale';
 import Vision from '../../Modules/Module 6/Vision';
 import Footer from '../../Components/Footer/Footer';
+import ClientReviews from '../../Modules/Module 7/ClientReviews';
 const Landingpage = () => {
     return (
         <>
@@ -19,6 +20,7 @@ const Landingpage = () => {
             <Experience />
             <Clientale />
             <Vision />
+            <ClientReviews />
             <Footer />
         </>
     )

@@ -1,47 +1,61 @@
 :root {
-  --green: #7C1034;
-  --blue: rgb(103, 108, 184);
-  --primary-blue: rgb(54, 149, 204);
-  --light-grey: rgb(243, 244, 246);
-  --dark-grey: rgb(31, 41, 55);
-  --medium-grey: rgb(229, 231, 235);
-  --primary-black: rgb(0, 0, 0);
-  --smoke-white: rgb(255, 255, 255);
-  --primary-white: rgb(255, 255, 255);
+  --primary-red: #7c1034;
+  --primary-black: #000000;
+  --primary-blue: #29354a;
+  --white: #f2f4f8;
+  --medium-grey: #5c5c5c;
+  --dark-grey: #141414;
+  --gradient: linear-gradient(
+    90deg,
+    rgba(124, 16, 52, 1) 15%,
+    rgba(41, 53, 74, 1) 90%
+  );
 }
-.vision-container{
+.vision-container {
   padding: 2% 15% 2% 15%;
-  background-color: var(--smoke-white);
+  background-color: var(--white);
 }
 .vision-card {
+  background-color: var(--dark-grey);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  padding: 5%;
+  padding: 10%;
+  border-radius: 10px;
 }
 .mission-card {
+  background-color: var(--dark-grey);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  padding: 5%;
+  padding: 10%;
+  border-radius: 10px;
 }
-.vision-title{
-  color: var(--green);
-  text-align: center;
+.vision-title {
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+  display: block;
+  margin: auto;
 }
-.vision-txt{
-  text-align: center;
+.mission-title {
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+  font-weight: 1000;
+}
+.vision-txt {
   margin-top: 5%;
-  color: var(--dark-grey);
+  color: var(--white);
 }
 
 /* Mobile Responsive Settings */
 @media only screen and (max-device-width: 768px) {
-  .vision-container{
+  .vision-container {
     padding: 10%;
   }
-  .vision-title{
+  .vision-title {
     font-size: 14px;
   }
-  .vision-txt{
+  .vision-txt {
     font-size: 12px;
     text-align: justify;
   }
