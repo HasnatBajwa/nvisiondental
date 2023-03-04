@@ -16,6 +16,9 @@
     padding-left: 10%;
    
   }
+  .nav-link{
+    text-decoration: none;
+  }
   .nav-link-container{
     margin-top: 3%;
     text-align: center;

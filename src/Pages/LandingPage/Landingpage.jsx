@@ -18,8 +18,8 @@ const Landingpage = () => {
             <ServicesModule />
             <Products />
             <Experience />
-            <ClientReviews />
             <Clientale />
+            <ClientReviews />
             <Vision />
             <Footer />
         </>
