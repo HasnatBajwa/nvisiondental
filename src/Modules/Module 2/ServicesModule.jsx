@@ -55,10 +55,10 @@ const ServicesModule = () => {
                                     <div className="slider-card">
                                         <img src={Teeth} alt="Teeth" className="service-img" />
                                         <h3 className="service-heading">
-                                            Braces
+                                            LAMINATES
                                         </h3>
                                         <p className="service-txt">
-                                            Braces are the closest you can get to healthy, beautiful and natural teeth.
+                                            Laminates are the closest you can get to healthy, beautiful and natural teeth.
                                         </p>
                                     </div>
                                 </SwiperSlide>

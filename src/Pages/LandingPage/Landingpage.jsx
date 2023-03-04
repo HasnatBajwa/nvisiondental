@@ -18,9 +18,9 @@ const Landingpage = () => {
             <ServicesModule />
             <Products />
             <Experience />
+            <ClientReviews />
             <Clientale />
             <Vision />
-            <ClientReviews />
             <Footer />
         </>
     )

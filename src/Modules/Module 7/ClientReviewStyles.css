@@ -1,0 +1,38 @@
+:root {
+  --primary-red: #7c1034;
+  --primary-black: #000000;
+  --primary-blue: #29354a;
+  --white: #f2f4f8;
+  --medium-grey: #5c5c5c;
+  --dark-grey: #141414;
+  --gradient: linear-gradient(
+    90deg,
+    rgba(124, 16, 52, 1) 15%,
+    rgba(41, 53, 74, 1) 90%
+  );
+}
+.reviews-container {
+  padding: 1%;
+}
+.review-card {
+  padding: 2% 10% 2% 10%;
+}
+.review-box {
+  background: var(--gradient);
+  padding: 5% 2% 5% 2%;
+  border-radius: 10px;
+  color: var(--white);
+}
+.user-img {
+  width: 25%;
+  display: block;
+  margin: auto;
+}
+.review-text {
+  text-align: justify;
+  font-size: 20px;
+  padding: 2%;
+}
+.review-img-name {
+  text-align: center;
+}

@@ -13,10 +13,10 @@ const Experience = () => {
                         <HeadingTitle name={"Experience"} />
                         <div data-aos='fade-right' className="experience-txt-container">
                             <h1 className="experience-heading">
-                                15+ Years of Quality Service in <span className="title">Dental Laboratory</span>
+                                15+ Years of Quality Service in <span className="title-gradient">Dental Laboratory</span>
                             </h1>
                             <p className="experience-txt">
-                                <span className="title">N VISION DENTAL</span>  is an industry leading provider of high-quality dentallaboratory products and services to dental professionals.
+                                <span className="title-gradient">N VISION DENTAL</span>  is an industry leading provider of high-quality dentallaboratory products and services to dental professionals.
                             </p>
                             <p className="experience-txt">
                                 We have embraced and utilized the latest advances in dental materials, techniques, and technology.

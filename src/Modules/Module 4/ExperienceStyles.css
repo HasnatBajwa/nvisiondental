@@ -25,6 +25,14 @@
     display: block;
     margin: auto;
   }
+  .title-gradient{
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+    font-weight: 900;
+    font-size: larger;
+  }
   /* Mobile Responsive Settings */
   @media only screen and (max-device-width: 768px){
     .experience-container{

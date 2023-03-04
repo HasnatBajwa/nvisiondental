@@ -62,7 +62,7 @@ const Footer = () => {
             </div>
             <div className="end-footer-container">
                 <p className="end-footer-txt">
-                    <span className="title">N VISION DENTAL .PVT LTD</span>
+                    <span className="title">N VISION DENTAL .PVT LTD</span> &nbsp;
                     <span className="end-footer">2023 &copy; Copy Right Registered | ALL RIGHTS RESERVED</span>
                 </p>
             </div>
