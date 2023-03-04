@@ -7,7 +7,19 @@ import './ContactPageStyles.css'
 import HomeIcon from '@mui/icons-material/Home';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
+import UserContactDetails from './UserContactDetails'
 const ContactPage = () => {
+    const {
+        fullName,
+        setfullName,
+        phoneNumber,
+        setphoneNumber,
+        email,
+        setemail,
+        message,
+        setmessage,
+        userInputHandler
+    } = UserContactDetails();
     return (
         <>
             <Header />
@@ -38,14 +50,14 @@ const ContactPage = () => {
                             </p>
                         </div>
                         <p className="input-title">Full Name:</p>
-                        <input type="text" className="user-details" />
+                        <input onChange={(e)=>setfullName(e.target.value)} value={fullName} type="text" className="user-details" />
                         <p className="input-title">Email Address:</p>
-                        <input type="text" className="user-details" />
+                        <input onChange={(e)=>setemail(e.target.value)} value={email} type="text" className="user-details" />
                         <p className="input-title">Phone Number:</p>
-                        <input type="text" className="user-details" />
+                        <input onChange={(e)=>setphoneNumber(e.target.value)} value={phoneNumber} type="text" className="user-details" />
                         <p className="input-title">Message:</p>
-                        <textarea name="" id="" cols="30" rows="10" className="user-msg"></textarea>
-                        <button className='get-details'>Send us a Message</button>
+                        <textarea onChange={(e)=>setmessage(e.target.value)} value={message} cols="30" rows="10" className="user-msg"></textarea>
+                        <button onClick={userInputHandler} className='get-details'>Send us a Message</button>
                     </Grid>
                     <Grid item xs={12} sm={12} md={6} lg={6}>
                         <h1 className="contact-head">

@@ -18,7 +18,7 @@ const Nav = () => {
               <Link className='nav-link' to='/'><span className="nav-links">Home</span></Link>
               <span className="nav-links">Products</span>
               <span className="nav-links">Services</span>
-              <span className="nav-links">About Us</span>
+              <Link className='nav-link' to='/about-us'> <span className="nav-links">About Us</span></Link>
               <Link className='nav-link' to='/contact-us'><span className="nav-links">Contact Us</span></Link>
             </div>
           </Grid>

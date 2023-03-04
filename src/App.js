@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ContactPage from './Pages/ContactPage/ContactPage';
+import AboutPage from './Pages/AboutPage/AboutPage';
 
 function App() {
   useEffect(() => {
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path='/' exact element={<Landingpage />} />
           <Route path='/contact-us' exact element={<ContactPage />} />
+          <Route path='/about-us' exact element={<AboutPage />} />
 
         </Routes>
       </BrowserRouter>
