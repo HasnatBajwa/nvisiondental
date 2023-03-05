@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ContactPage from './Pages/ContactPage/ContactPage';
 import AboutPage from './Pages/AboutPage/AboutPage';
 import Whatsapp from './Components/Whatsapp/Whatsapp';
+import ProductsPage from './Pages/ProductsPage/ProductsPage';
 function App() {
   useEffect(() => {
     AOS.init({
@@ -23,6 +24,7 @@ function App() {
           <Route path='/' exact element={<Landingpage />} />
           <Route path='/contact-us' exact element={<ContactPage />} />
           <Route path='/about-us' exact element={<AboutPage />} />
+          <Route path='/our-products' exact element={<ProductsPage />} />
 
         </Routes>
       </BrowserRouter>

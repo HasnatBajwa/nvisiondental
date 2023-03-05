@@ -16,7 +16,7 @@ const Nav = () => {
           <Grid item xs={12} sm={12} md={12} lg={4} >
             <div className="nav-link-container">
               <Link className='nav-link' to='/'><span className="nav-links">Home</span></Link>
-              <span className="nav-links">Products</span>
+              <Link className='nav-link' to='our-products'> <span className="nav-links">Products</span> </Link>
               <span className="nav-links">Services</span>
               <Link className='nav-link' to='/about-us'> <span className="nav-links">About Us</span></Link>
               <Link className='nav-link' to='/contact-us'><span className="nav-links">Contact Us</span></Link>
