@@ -1,19 +1,118 @@
 :root {
-    --primary-red: #7c1034;
-    --primary-black: #000000;
-    --primary-blue: #29354a;
-    --white: #f2f4f8;
-    --medium-grey: #5c5c5c;
-    --dark-grey: #141414;
-    --gradient: linear-gradient(
-      90deg,
-      rgba(124, 16, 52, 1) 15%,
-      rgba(41, 53, 74, 1) 90%
-    );
-    --left-gradient:linear-gradient(
-      90deg,
-      rgba(41, 53, 74, 1) 15%,
-      rgba(124, 16, 52, 1) 90%
-    );
+  --primary-red: #7c1034;
+  --primary-black: #000000;
+  --primary-blue: #29354a;
+  --white: #f2f4f8;
+  --medium-grey: #5c5c5c;
+  --dark-grey: #141414;
+  --gradient: linear-gradient(
+    90deg,
+    rgba(124, 16, 52, 1) 15%,
+    rgba(41, 53, 74, 1) 90%
+  );
+  --left-gradient: linear-gradient(
+    90deg,
+    rgba(41, 53, 74, 1) 15%,
+    rgba(124, 16, 52, 1) 90%
+  );
+}
+.top-title-container {
+  background-color: var(--dark-grey);
+  padding: 5% 15% 5% 15%;
+}
+.title-heading {
+  color: var(--white);
+}
+.about-us-heading {
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+  font-size: 80px;
+}
+.about-txt-container {
+  padding: 5% 20% 5% 20%;
+}
+.about-heading {
+  color: var(--medium-grey);
+  text-align: center;
+}
+.about-card {
+  background-color: var(--white);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 5%;
+  border-radius: 10px;
+  margin-top: 5%;
+  height: 15vh;
+}
+.about-card-container{
+  padding: 0% 5% 5% 5%;
+}
+.about-txt{
+  color: var(--medium-grey);
+  margin-top: 2%;
+  text-align: justify;
+}
+.commitment-heading{
+  text-align: center;
+}
+.commitment-txt{
+  color: var(--medium-grey);
+  margin-top: 2%;
+  text-align: center;
+  font-weight: 600;
+  line-height: 150%;
+}
+.learn-more-container{
+  background-color: var(--dark-grey);
+  padding: 2% 10% 5% 10%;
+}
+.learn-more-heading{
+  color: var(--white);
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+.learn-more-btn{
+  background: var(--gradient);
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  padding: 2% 4% 2% 4%;
+  color: var(--white);
+  display: block;
+  margin: auto;
+  font-weight: 800;
+}
+.learn-more-btn:hover{
+  background: var(--left-gradient);
+}
+@media only screen and (max-device-width: 768px){
+  .title-heading{
+    font-size: 15px;
+    text-align: center;
   }
-  
+  .about-us-heading{
+    font-size: 30px;
+    display: block;
+    margin: auto;
+  }
+  .about-txt-container{
+    padding: 5%;
+  }
+  .about-heading{
+    font-size: 20px;
+  }
+  .commitment-heading{
+    font-size: 16px;
+  }
+  .commitment-txt{
+    font-size: 14px;
+  }
+  .about-card{
+    height: fit-content;
+  }
+  .learn-more-container{
+    padding: 5%;
+  }
+}

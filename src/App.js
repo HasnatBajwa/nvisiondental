@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ContactPage from './Pages/ContactPage/ContactPage';
 import AboutPage from './Pages/AboutPage/AboutPage';
-
+import Whatsapp from './Components/Whatsapp/Whatsapp';
 function App() {
   useEffect(() => {
     AOS.init({
@@ -26,6 +26,7 @@ function App() {
 
         </Routes>
       </BrowserRouter>
+      <Whatsapp />
     </>
   );
 }
