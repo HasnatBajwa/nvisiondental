@@ -11,13 +11,15 @@ import Implants from '../../Assets/implants.jpg'
 import Crowns from '../../Assets/bridge.jpg'
 import Bridges from '../../Assets/crown.jpg'
 import Implants2 from '../../Assets/implants2.webp'
+import Laminates from '../../Assets/laminates.avif'
+import Laminates2 from '../../Assets/laminates2.webp'
 import { Link } from 'react-router-dom'
 const ProductsPage = () => {
     return (
         <>
             <Header />
             <Nav />
-            <div className="products-page-container">
+            <div className="products-page-page-container">
                 <div className="product-page-title-container">
                     <h3 className="product-page-title">
                         Get a Close Review
@@ -31,7 +33,7 @@ const ProductsPage = () => {
                 <h1 className="product-desc-heading">
                     INTRODUCING
                 </h1>
-                <div data-aos='fade-up' className="products-container">
+                <div data-aos='fade-up' className="products-page-container">
                     <Grid container justifyContent={'center'} spacing={6}>
                         <HeadterTitle name={" ALIGNERS "} />
                         <Grid xs={12} sm={12} md={12} lg={12}>
@@ -62,7 +64,7 @@ const ProductsPage = () => {
                     </Grid>
                 </div>
                 {/* Dental Implants */}
-                <div data-aos='fade-up' className="products-container">
+                <div data-aos='fade-up' className="products-page-container">
                     <Grid container justifyContent={'center'} spacing={6}>
                         <HeadterTitle name={" DENTAL IMPLANTS "} />
                         <Grid xs={12} sm={12} md={12} lg={12}>
@@ -91,7 +93,7 @@ const ProductsPage = () => {
                     </Grid>
                 </div>
                 {/* Crowns & Bridges */}
-                <div data-aos='fade-up' className="products-container">
+                <div data-aos='fade-up' className="products-page-container">
                     <Grid container justifyContent={'center'} spacing={6}>
                         <HeadterTitle name={" CROWNS & BRIDGES "} />
                         <Grid xs={12} sm={12} md={12} lg={12}>
@@ -119,7 +121,37 @@ const ProductsPage = () => {
                         </Grid>
                     </Grid>
                 </div>
+                {/* Laminated*/}
+                <div data-aos='fade-up' className="products-page-container">
+                    <Grid container justifyContent={'center'} spacing={6}>
+                        <HeadterTitle name={" LAMINATES "} />
+                        <Grid xs={12} sm={12} md={12} lg={12}>
+                            <div className="product-desc-container">
+                                <h2 className="product-desc-title">
+                                    Laminates
+                                </h2>
+                                <p className="product-desc-txt">
+                                    <span className="title-gradient">Laminates</span> are thin layers of porcelain material (although other material options may be available). 
+                                </p>
+                                <p className="product-desc">
+                               Laminates are most commonly applied to the visible surface of front teeth to restore the appearance of each tooth and protect teeth from further harm or staining.
+                                </p>
+                            </div>
+                        </Grid>
+                        <Grid item xs={6} sm={6} md={6} lg={6}>
+                            <div className="product-desc-card">
+                                <img src={Laminates} alt="" className="product-desc-img" />
+                            </div>
+                        </Grid>
+                        <Grid item xs={6} sm={6} md={6} lg={6}>
+                            <div className="product-desc-card">
+                                <img src={Laminates2} alt="" className="product-desc-img" />
+                            </div>
+                        </Grid>
+                    </Grid>
+                </div>
             </div>
+
             <div className="end-product-page">
                 <h1 className="end-product-heading">
                     Need More Information?
