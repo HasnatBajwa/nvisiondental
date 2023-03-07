@@ -36,3 +36,24 @@
 .review-img-name {
   text-align: center;
 }
+@media only screen and (max-device-width: 768px){
+  .reviews-container{
+    padding: 0%;
+    margin-top: 5%;
+  }
+  .review-card{
+    padding: 5%;
+  }
+  .review-box{
+    padding: 5%;
+  }
+  .user-img{
+    width: 10%;
+  }
+  .review-img-name{
+    font-size: 12px;
+  }
+  .review-text{
+    font-size: 14px;
+  }
+}

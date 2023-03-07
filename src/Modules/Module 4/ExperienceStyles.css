@@ -46,6 +46,8 @@
     }
     .experience-txt{
         font-size: 12px;
+        text-align: justify;
+        padding: 0% 2% 0% 2%;
     }
     .experience-img{
         width: 80%;

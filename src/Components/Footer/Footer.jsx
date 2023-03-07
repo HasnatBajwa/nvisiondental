@@ -7,10 +7,10 @@ const Footer = () => {
         <>
             <div className="footer-container">
                 <Grid container justifyContent={'center'}>
-                    <Grid item xs={2} sm={2} md={2} lg={2}>
+                    <Grid item xs={12} sm={12} md={12} lg={12}>
                         <img src={Icon} alt="" className='footer-icon' />
                     </Grid>
-                    <Grid item xs={2} sm={2} md={2} lg={2}>
+                    <Grid item xs={5} sm={5} md={2} lg={2}>
                         <h3 className="footer-title">
                             Contact Us
                         </h3>
@@ -20,7 +20,7 @@ const Footer = () => {
                             +92-41-8555333
                         </p>
                     </Grid>
-                    <Grid item xs={2} sm={2} md={2} lg={2}>
+                    <Grid item xs={5} sm={5} md={2} lg={2}>
                         <h3 className="footer-title">
                             Location
                         </h3>
@@ -28,7 +28,7 @@ const Footer = () => {
                             P-369 Street-2 ,Block B Al Najaf Colony<br /> 38000 Faisalabad, Pakistan
                         </p>
                     </Grid>
-                    <Grid item xs={2} sm={2} md={2} lg={2}>
+                    <Grid item xs={5} sm={5} md={2} lg={2}>
                         <h3 className="footer-title">
                             Services
                         </h3>
@@ -41,16 +41,7 @@ const Footer = () => {
                             Prosthetics
                         </p>
                     </Grid>
-                    <Grid item xs={2} sm={2} md={2} lg={2}>
-                        <h3 className="footer-title">
-                            Resources
-                        </h3>
-                        <p className="footer-txt">
-                            Help Center <br />
-                            Site Map
-                        </p>
-                    </Grid>
-                    <Grid item xs={2} sm={2} md={2} lg={2}>
+                    <Grid item xs={5} sm={5} md={2} lg={2}>
                         <h3 className="footer-title">
                             Products
                         </h3>

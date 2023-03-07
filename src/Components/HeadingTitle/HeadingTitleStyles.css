@@ -18,3 +18,9 @@
     color: var(--white);
     text-align: center;
   }
+  @media only screen and (max-device-width: 768px){
+    .heading-title{
+      padding: 10px;
+      font-size: 14px;
+    }
+  }

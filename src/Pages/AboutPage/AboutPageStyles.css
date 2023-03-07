@@ -100,14 +100,17 @@
   .about-txt-container{
     padding: 5%;
   }
-  .about-heading{
-    font-size: 20px;
+  .about-txt{
+    font-size: 12px;
   }
-  .commitment-heading{
+  .about-heading{
     font-size: 16px;
   }
+  .commitment-heading{
+    font-size: 12px;
+  }
   .commitment-txt{
-    font-size: 14px;
+    font-size: 10px;
   }
   .about-card{
     height: fit-content;

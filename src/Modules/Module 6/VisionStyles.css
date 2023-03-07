@@ -14,14 +14,7 @@
 .vision-container {
   padding: 2% 15% 2% 15%;
 }
-.vision-card {
-  background-color: var(--white);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 10%;
-  border-radius: 10px;
-  margin-top: 5%;
-  height: 15vh;
-}
+
 .mission-card {
   background-color: var(--white);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -49,13 +42,20 @@
 .vision-txt {
   margin-top: 5%;
   color: var(--dark-grey);
-  font-size: 20px;
-}
+  font-size: 16px;
+  text-align: justify;
+  }
 
 /* Mobile Responsive Settings */
 @media only screen and (max-device-width: 768px) {
+  .mission-card{
+    padding: 2% 2% 2% 2%;
+    max-height: fit-content;
+    min-height: fit-content;
+    height: fit-content;
+  }
   .vision-container {
-    padding: 10%;
+    padding: 5%;
   }
   .vision-title {
     font-size: 14px;

@@ -28,6 +28,7 @@ const ServicesModule = () => {
                                 navigation={true}
                                 modules={[Autoplay, Pagination, Navigation]}
                                 className="mySwiper"
+                               
                             >
                                 <SwiperSlide>
                                     <div className="slider-card">
@@ -47,7 +48,7 @@ const ServicesModule = () => {
                                             DENTAL IMPLANTS
                                         </h3>
                                         <p className="service-txt">
-                                           Implants are the closest you can get to healthy, beautiful and natural teeth.
+                                            Implants are the closest you can get to healthy, beautiful and natural teeth.
                                         </p>
                                     </div>
                                 </SwiperSlide>
@@ -66,10 +67,10 @@ const ServicesModule = () => {
                                     <div className="slider-card">
                                         <img src={Tooth} alt="Teeth" className="service-img" />
                                         <h3 className="service-heading">
-                                          DIGITAL
+                                            DIGITAL
                                         </h3>
                                         <p className="service-txt">
-                                         Digital are the closest you can get to healthy, beautiful and natural teeth.
+                                            Digital are the closest you can get to healthy, beautiful and natural teeth.
                                         </p>
                                     </div>
                                 </SwiperSlide>
@@ -77,10 +78,10 @@ const ServicesModule = () => {
                                     <div className="slider-card">
                                         <img src={Tooth} alt="Teeth" className="service-img" />
                                         <h3 className="service-heading">
-                                          PROSTHETICS
+                                            PROSTHETICS
                                         </h3>
                                         <p className="service-txt">
-                                           Prosthetics are the closest you can get to healthy, beautiful and natural teeth.
+                                            Prosthetics are the closest you can get to healthy, beautiful and natural teeth.
                                         </p>
                                     </div>
                                 </SwiperSlide>
@@ -88,10 +89,10 @@ const ServicesModule = () => {
                                     <div className="slider-card">
                                         <img src={Teeth} alt="Teeth" className="service-img" />
                                         <h3 className="service-heading">
-                                          CROWNS & BRIDGES
+                                            CROWNS & BRIDGES
                                         </h3>
                                         <p className="service-txt">
-                                           Crowns & Bridges are the closest you can get to healthy, beautiful and natural teeth.
+                                            Crowns & Bridges are the closest you can get to healthy, beautiful and natural teeth.
                                         </p>
                                     </div>
                                 </SwiperSlide>

@@ -22,6 +22,7 @@
   width: fit-content;
   display: block;
   margin: auto;
+  font-size: 14px;
 }
 .product-img {
   display: block;
@@ -31,6 +32,6 @@
 /* Mobile Responsive Settings */
 @media only screen and (max-device-width: 768px) {
   .product-title {
-    font-size: 8px;
+    font-size: 6px;
   }
 }

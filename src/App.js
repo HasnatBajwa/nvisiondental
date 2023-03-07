@@ -15,7 +15,7 @@ function App() {
     AOS.init({
       duration: 1500,
       delay: 200,
-      disable: 'mobile'
+      disable:'phone'
     })
   }, [])
 

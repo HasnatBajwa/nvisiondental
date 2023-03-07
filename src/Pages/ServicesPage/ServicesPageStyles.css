@@ -44,6 +44,7 @@
 }
 .services-data-txt {
   text-align: center;
+  color: var(--medium-grey);
 }
 .services-img {
   width: 100%;
@@ -67,7 +68,7 @@
     .services-heading{
       display: block;
       margin: auto;
-      font-size: 30px;
+      font-size: 25px;
     }
     .service-data{
       padding: 5%;
@@ -76,11 +77,11 @@
       padding: 5%;
     }
     .service-data-heading{
-      font-size: 20px;
+      font-size: 14px;
     }
     .services-data-txt{
       text-align: justify;
-      font-size: 16px;
+      font-size: 14px;
       margin-top: 5%;
     }
     .end-services{

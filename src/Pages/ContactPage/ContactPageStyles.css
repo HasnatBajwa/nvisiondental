@@ -77,3 +77,31 @@
 .get-details:hover{
     background: var(--left-gradient);
 }
+@media only screen and (max-device-width: 768px){
+  .contact-page-header{
+    padding: 5%;
+    }
+    .contact-txt{
+      text-align: center;
+      font-size: 16px;
+    }
+    .contact-heading{
+      font-size: 30px;
+      display: block;
+      margin: auto;
+    }
+    .user-input-container{
+      padding: 5%;
+    }
+    .contact-head{
+      display: block;
+      margin: auto;
+    }
+    .contact-details{
+      font-size: 12px;
+    }
+    .contacts-icons{
+      display: block;
+      margin: auto;
+    }
+}

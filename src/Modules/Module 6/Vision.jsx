@@ -10,7 +10,7 @@ const Vision = () => {
                 <HeadingTitle name={"OUR MISSION"} />
                 <Grid className='cards-container' container justifyContent={'center'} spacing={3}>
                     <Grid item xs={6} sm={6} md={6} lg={6}>
-                        <div data-aos='fade-right' className="vision-card">
+                        <div data-aos='fade-right' className="mission-card">
                             <h1 className="vision-title">
                                 OUR VISSION
                             </h1>

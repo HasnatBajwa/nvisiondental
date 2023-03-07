@@ -21,7 +21,6 @@
   /* background-color: var(--primary-red); */
   background: var(--gradient);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
   padding: 5%;
   display: block;
   margin: auto;
@@ -40,13 +39,20 @@
 }
 /* Mobile Responsive Settings */
 @media only screen and (max-device-width: 768px) {
+  .services-module-container{
+    padding: 2%;
+  }
+  .slider-card{
+    padding: 2%;
+  }
   .service-img {
-    width: 50%;
+    width: 25%;
   }
   .service-heading {
-    font-size: 15px;
+    font-size: 12px;
   }
   .service-txt {
     font-size: 12px;
   }
+  
 }
