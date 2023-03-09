@@ -6,6 +6,8 @@ import Footer from '../../Components/Footer/Footer';
 import { Grid } from '@mui/material';
 import HeadingTitle from '../../Components/HeadingTitle/HeadingTitle'
 import { Link } from 'react-router-dom';
+import Whatsapp from '../../Components/Whatsapp/Whatsapp';
+
 const AboutPage = () => {
     return (
         <>
@@ -31,7 +33,7 @@ const AboutPage = () => {
                         <span className="title-gradient"> N VISION DENTAL</span>   Lab has maintained superior standards of quality and service from the very beginning.
                         Being family owned and operated means that we are able to maintain an environment of absolute honesty and remain sensitive to the needs of each individual dentist.
                         <br />
-                      At  <span className="title-gradient"> N VISION DENTAL</span>  Each case is handled with a team mentality where the dentist is part of the team able at all times to express their specific requirements.
+                        At  <span className="title-gradient"> N VISION DENTAL</span>  Each case is handled with a team mentality where the dentist is part of the team able at all times to express their specific requirements.
                         We stress this continuous communication with each individual dental practice.
 
                         Our high standard of quality means that we use the latest materials and systems in ceramics and porcelain fused to metal.
@@ -94,6 +96,7 @@ const AboutPage = () => {
                     </Link>
                 </div>
             </div>
+            <Whatsapp />
             <Footer />
         </>
     )

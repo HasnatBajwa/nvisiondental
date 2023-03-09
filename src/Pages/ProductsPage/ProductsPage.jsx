@@ -14,6 +14,8 @@ import Implants2 from '../../Assets/implants2.webp'
 import Laminates from '../../Assets/laminates.avif'
 import Laminates2 from '../../Assets/laminates2.webp'
 import { Link } from 'react-router-dom'
+import Whatsapp from '../../Components/Whatsapp/Whatsapp';
+
 const ProductsPage = () => {
     return (
         <>
@@ -131,10 +133,10 @@ const ProductsPage = () => {
                                     Laminates
                                 </h2>
                                 <p className="product-desc-txt">
-                                    <span className="title-gradient">Laminates</span> are thin layers of porcelain material (although other material options may be available). 
+                                    <span className="title-gradient">Laminates</span> are thin layers of porcelain material (although other material options may be available).
                                 </p>
                                 <p className="product-desc">
-                               Laminates are most commonly applied to the visible surface of front teeth to restore the appearance of each tooth and protect teeth from further harm or staining.
+                                    Laminates are most commonly applied to the visible surface of front teeth to restore the appearance of each tooth and protect teeth from further harm or staining.
                                 </p>
                             </div>
                         </Grid>
@@ -160,6 +162,7 @@ const ProductsPage = () => {
                     <button className='info-btn'>Get Qoute</button>
                 </Link>
             </div>
+            <Whatsapp />
             <Footer />
         </>
     )

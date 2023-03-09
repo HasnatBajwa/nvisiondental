@@ -5,6 +5,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import { Link } from 'react-router-dom';
 import './HeaderStyles.css'
 
 const Header = () => {
@@ -23,7 +24,7 @@ const Header = () => {
                     </Grid>
                     <Grid item xs={3} sm={3} md={3} lg={3}>
                         <div className="auth-container">
-                            <p> <span className="auth-txt">Login</span>|<span className="auth-txt">Register</span></p>
+                            <Link className='auth-link' to='admin-dashboard'><span className="auth-txt">LOGIN</span></Link> | <Link className='auth-link' to='/register'><span className="auth-txt">REGISTER</span></Link>
                         </div>
                     </Grid>
                 </Grid>

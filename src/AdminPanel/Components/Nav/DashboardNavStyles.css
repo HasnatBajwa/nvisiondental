@@ -1,0 +1,45 @@
+:root {
+    --primary-red: #7c1034;
+    --primary-black: #000000;
+    --primary-blue: #29354a;
+    --white: #f2f4f8;
+    --medium-grey: #5c5c5c;
+    --dark-grey: #141414;
+    --gradient:linear-gradient(90deg, rgba(124,16,52,1) 15%, rgba(41,53,74,1) 90%);
+  }
+  .db-icon{
+    display: block;
+    margin: auto;
+  }
+.dashboard-nav{
+    padding: 10%;
+}
+.dashboard-menu-btn{
+    background: none;
+    padding: 2%;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+.menu-txt{
+    display: block;
+    margin: auto;
+    background: var(--gradient);
+    background-clip:text ;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    width: fit-content;
+}
+.dashboard-menu-container{
+    margin-top: 10%;
+}
+.dashboard-menu{
+    margin-top: 10%;
+}
+.bottom-menu{
+    position: absolute;
+    bottom: 20px;
+    display: block;
+    margin: auto;
+}

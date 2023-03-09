@@ -9,6 +9,8 @@ import Clientale from '../../Modules/Module 5/Clientale';
 import Vision from '../../Modules/Module 6/Vision';
 import Footer from '../../Components/Footer/Footer';
 import ClientReviews from '../../Modules/Module 7/ClientReviews';
+import Whatsapp from '../../Components/Whatsapp/Whatsapp';
+
 const Landingpage = () => {
     return (
         <>
@@ -21,6 +23,7 @@ const Landingpage = () => {
             <Clientale />
             <ClientReviews />
             <Vision />
+            <Whatsapp />
             <Footer />
         </>
     )

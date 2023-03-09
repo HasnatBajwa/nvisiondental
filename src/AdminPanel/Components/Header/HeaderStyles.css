@@ -1,0 +1,24 @@
+:root {
+    --primary-red: #7c1034;
+    --primary-black: #000000;
+    --primary-blue: #29354a;
+    --white: #f2f4f8;
+    --medium-grey: #5c5c5c;
+    --dark-grey: #141414;
+    --gradient:linear-gradient(90deg, rgba(124,16,52,1) 15%, rgba(41,53,74,1) 90%);
+  }
+  .db-header-container{
+    background-color: var(--primary-red);
+    padding: 1%;
+  }
+  .icon-container{
+    color: var(--white);
+  }
+  .icon{
+    margin-left: 10%;
+    cursor: pointer;
+  }
+  .db-heading{
+    color: var(--white);
+    text-align: center;
+  }

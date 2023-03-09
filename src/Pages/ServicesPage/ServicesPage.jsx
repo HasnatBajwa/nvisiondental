@@ -7,6 +7,8 @@ import './ServicesPageStyles.css';
 import CAD from '../../Assets/cad.jpg'
 import DI from '../../Assets/digital-impression.jpg'
 import { Link } from 'react-router-dom';
+import Whatsapp from '../../Components/Whatsapp/Whatsapp';
+
 const ServicesPage = () => {
     return (
         <>
@@ -57,6 +59,7 @@ const ServicesPage = () => {
                     <Link to='/contact-us'><button className='info-btn'> Get Info </button></Link>
                 </div>
             </div>
+            <Whatsapp />
             <Footer />
         </>
     )

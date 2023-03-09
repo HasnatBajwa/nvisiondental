@@ -8,6 +8,8 @@ import HomeIcon from '@mui/icons-material/Home';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import UserContactDetails from './UserContactDetails'
+import Whatsapp from '../../Components/Whatsapp/Whatsapp';
+
 const ContactPage = () => {
     const {
         fullName,
@@ -50,13 +52,13 @@ const ContactPage = () => {
                             </p>
                         </div>
                         <p className="input-title">Full Name:</p>
-                        <input onChange={(e)=>setfullName(e.target.value)} value={fullName} type="text" className="user-details" />
+                        <input onChange={(e) => setfullName(e.target.value)} value={fullName} type="text" className="user-details" />
                         <p className="input-title">Email Address:</p>
-                        <input onChange={(e)=>setemail(e.target.value)} value={email} type="text" className="user-details" />
+                        <input onChange={(e) => setemail(e.target.value)} value={email} type="text" className="user-details" />
                         <p className="input-title">Phone Number:</p>
-                        <input onChange={(e)=>setphoneNumber(e.target.value)} value={phoneNumber} type="text" className="user-details" />
+                        <input onChange={(e) => setphoneNumber(e.target.value)} value={phoneNumber} type="text" className="user-details" />
                         <p className="input-title">Message:</p>
-                        <textarea onChange={(e)=>setmessage(e.target.value)} value={message} cols="30" rows="10" className="user-msg"></textarea>
+                        <textarea onChange={(e) => setmessage(e.target.value)} value={message} cols="30" rows="10" className="user-msg"></textarea>
                         <button onClick={userInputHandler} className='get-details'>Send us a Message</button>
                     </Grid>
                     <Grid item xs={12} sm={12} md={6} lg={6}>
@@ -90,7 +92,7 @@ const ContactPage = () => {
                     </Grid>
                 </Grid>
             </div>
-
+            <Whatsapp />
             <Footer />
         </>
     )
