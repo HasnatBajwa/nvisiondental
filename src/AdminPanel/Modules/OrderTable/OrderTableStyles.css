@@ -7,8 +7,6 @@
     --dark-grey: #141414;
     --gradient:linear-gradient(90deg, rgba(124,16,52,1) 15%, rgba(41,53,74,1) 90%);
   }
-  .job-card-container{
-    display: flex;
-    margin: auto;
-   padding: 5% 20% 5% 20%;
-  }
+ .order-table-container{
+    padding: 1% 5% 1% 5%;
+ }

@@ -12,7 +12,8 @@
     margin: auto;
   }
 .dashboard-nav{
-    padding: 10%;
+    /* padding: 10%; */
+    width: 50%;
 }
 .dashboard-menu-btn{
     background: none;
@@ -23,8 +24,7 @@
     margin: auto;
 }
 .menu-txt{
-    display: block;
-    margin: auto;
+  
     background: var(--gradient);
     background-clip:text ;
     -webkit-text-fill-color: transparent;
@@ -35,11 +35,13 @@
     margin-top: 10%;
 }
 .dashboard-menu{
+    display: inline-flex;
+
     margin-top: 10%;
 }
-.bottom-menu{
+/* .bottom-menu{
     position: absolute;
     bottom: 20px;
     display: block;
     margin: auto;
-}
+} */

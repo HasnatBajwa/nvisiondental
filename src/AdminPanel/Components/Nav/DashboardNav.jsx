@@ -10,6 +10,7 @@ import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { Link } from 'react-router-dom'
 const DashboardNav = () => {
     const [open, setOpen] = React.useState(false);
 
@@ -44,10 +45,11 @@ const DashboardNav = () => {
                 <MenuIcon className='icon' onClick={handleDrawerOpen} />
 
                 <Drawer
-                    anchor="left"
+                    anchor="bottom"
                     onClose={handleDrawerClose}
                     open={open}
-                    PaperProps={{ style: { width: '10%' } }}
+                    PaperProps={{ style: { width: '50%', height:'800px' } }}
+                    variant='temporary'
                 >
                     <div className="dashboard-nav">
                         <img src={Icon} alt="icon" className='db-icon' />
@@ -55,7 +57,7 @@ const DashboardNav = () => {
                         <div className="dashboard-menu-container">
                             <div className="dashboard-menu">
                                 <button className='dashboard-menu-btn'>
-                                    <GridViewIcon /> <span className="menu-txt">DASHBOARD</span>
+                                <Link className='nav-link' to='/admin-dashboard'><GridViewIcon /> <span className="menu-txt">DASHBOARD</span></Link>    
                                 </button>
                             </div>
                             <div className="dashboard-menu">
@@ -126,7 +128,7 @@ const DashboardNav = () => {
                                         }}
                                     >
                                         <MenuItem onClick={handleCloseProfile}>Add User</MenuItem>
-                                        <MenuItem onClick={handleCloseProfile}>Log Out</MenuItem>
+                                        <Link className='nav-link' to='/'><MenuItem onClick={handleCloseProfile}>Log Out</MenuItem></Link>
                                     </Menu>
                                 </div>
                             </div>

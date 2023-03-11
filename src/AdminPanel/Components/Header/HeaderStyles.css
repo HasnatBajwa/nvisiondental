@@ -22,3 +22,7 @@
     color: var(--white);
     text-align: center;
   }
+  .nav-link-db{
+    text-decoration: none;
+    color: var(--white);
+  }

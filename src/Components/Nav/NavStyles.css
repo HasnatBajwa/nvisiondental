@@ -18,6 +18,7 @@
   }
   .nav-link{
     text-decoration: none;
+    color: var(--dark-grey);
   }
   .nav-link-container{
     margin-top: 3%;

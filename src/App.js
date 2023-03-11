@@ -11,6 +11,7 @@ import ProductsPage from './Pages/ProductsPage/ProductsPage';
 import ServicesPage from './Pages/ServicesPage/ServicesPage';
 import RegistrationPage from './Pages/RegistrationPage/RegistrationPage';
 import Dashboard from './AdminPanel/Pages/Dashboard/DashBoard'
+import CreateOrder from './AdminPanel/Modules/CreareOrder/CreateOrder';
 function App() {
   useEffect(() => {
     AOS.init({
@@ -31,6 +32,7 @@ function App() {
           <Route path='/our-services' exact element={<ServicesPage />} />
           <Route path='/register' exact element={<RegistrationPage />} />
           <Route path='/admin-dashboard' exact element={<Dashboard />} />
+          <Route path='/admin-dashboard/create-order' exact element={<CreateOrder />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -1,0 +1,48 @@
+:root {
+    --primary-red: #7c1034;
+    --primary-black: #000000;
+    --primary-blue: #29354a;
+    --white: #f2f4f8;
+    --medium-grey: #5c5c5c;
+    --dark-grey: #141414;
+    --gradient:linear-gradient(90deg, rgba(124,16,52,1) 15%, rgba(41,53,74,1) 90%);
+  }
+  .nav-link-db{
+    text-decoration: none;
+    color: var(--white);
+  }
+  .create-order-container{
+    padding: 2% 15% 2% 15%;
+    background-color:var(--medium-grey);
+  }
+  .invoice-container{
+    border: 2px solid var(--medium-grey);
+    border-radius: 5px;
+    padding: 2%;
+    background-color: white;
+  }
+  .invoice-heading{
+   color: var(--medium-grey);
+   border-bottom: 2px solid black;
+  }
+  .order-detail-input-container{
+    margin-top: 2%;
+  }
+  .order-input-title{
+    margin: 0.5%;
+    margin-top: 2%;
+    font-weight: 700;
+    color: var(--primary-red);
+  }
+  .order-detail-input{
+    border: 2px solid var(--medium-grey);
+    border-radius: 5px;
+    padding: 0.3%;
+    width: 60%;
+  }
+  #select{
+    padding: 0.5%;
+    border: 2px solid var(--medium-grey);
+    border-radius: 5px;
+    width: 60%;
+  }

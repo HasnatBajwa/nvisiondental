@@ -1,8 +1,19 @@
 import React from 'react'
-
-const JobCard = () => {
+import './JobCardStyles.css'
+const JobCard = (props) => {
   return (
-    <div>JobCard</div>
+    <>
+      <div className="card-container">
+        <div className={props.data.type}>
+          <p className="job-card-number">
+            {props.data.value}
+          </p>
+          <h1 className='job-card-title'>
+            {props.data.title}
+          </h1>
+        </div>
+      </div>
+    </>
   )
 }
 

@@ -4,6 +4,7 @@ import './HeaderStyles.css';
 import MessageIcon from '@mui/icons-material/Message';
 import AddBoxIcon from '@mui/icons-material/AddBox';
 import DashboardNav from '../Nav/DashboardNav';
+import {Link} from 'react-router-dom'
 const Header = () => {
     return (
         <>
@@ -14,15 +15,15 @@ const Header = () => {
                             <DashboardNav />
                         </div>
                     </Grid>
-                    <Grid xs={10} sm={10} md={10} lg={10}>
+                    <Grid item xs={10} sm={10} md={10} lg={10}>
                         <h1 className="db-heading">
                             N VISION DENTAL LABORATORY
                         </h1>
                     </Grid>
-                    <Grid xs={1} sm={1} md={1} lg={1}>
+                    <Grid item xs={1} sm={1} md={1} lg={1}>
                         <div className="icon-container">
                             <span className='icon'> <MessageIcon /></span>
-                            <span className='icon'> <AddBoxIcon /></span>
+                       <Link className='nav-link-db' to='/admin-dashboard/create-order'><span className='icon'> <AddBoxIcon /></span></Link>     
                         </div>
                     </Grid>
                 </Grid>
