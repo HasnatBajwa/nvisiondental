@@ -1,0 +1,53 @@
+:root {
+  --primary-red: #7c1034;
+  --primary-black: #000000;
+  --primary-blue: #29354a;
+  --white: #f2f4f8;
+  --medium-grey: #5c5c5c;
+  --dark-grey: #141414;
+  --gradient: linear-gradient(
+    90deg,
+    rgba(124, 16, 52, 1) 15%,
+    rgba(41, 53, 74, 1) 90%
+  );
+}
+.lab-slip-container {
+  background: var(--medium-grey);
+  padding: 2% 20% 2% 20%;
+}
+.address-container {
+  background-color: var(--white);
+  border: 2px var(--primary-red) solid;
+  padding: 2%;
+  border-radius: 5px;
+}
+.add-title{
+  color: var(--primary-red);
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+}
+.add-txt{
+    font-weight: 600;
+    color: var(--medium-grey);
+}
+.slip-title{
+    color: var(--medium-grey);
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 5%;
+}
+.slip-txt{
+    color: var(--dark-grey);
+    font-weight: 500;
+}
+.heading{
+    color: var(--primary-blue);
+    font-weight: 600;
+    font-size: 18px;
+}
+.heading-txt{
+    color: var(--medium-grey);
+    font-weight: 600;
+    font-size: 16px;
+}
