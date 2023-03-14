@@ -4,6 +4,7 @@ import './LabSlipStyles.css'
 import { Grid } from '@mui/material'
 import { useRef } from 'react'
 import { useReactToPrint } from 'react-to-print';
+import { Link } from 'react-router-dom'
 const LabSlip = () => {
     const componentRef = useRef();
     const handlePrint = useReactToPrint({
@@ -11,8 +12,8 @@ const LabSlip = () => {
     });
     return (
         <div className="lab-slip-container">
-            <div ref={componentRef} className="lab-slip">
-                <div className="address-container">
+            <div className="lab-slip">
+                <div ref={componentRef} className="address-container">
                     <Grid container>
                         <Grid item xs={12} sm={12} md={12} lg={12}>
                             <span className="add-title">
@@ -29,7 +30,7 @@ const LabSlip = () => {
                         </Grid>
                     </Grid>
 
-                    <div  className="lab-slip-details">
+                    <div className="lab-slip-details">
                         {OrderDetails.map((data, i) => {
                             return (
                                 <>
@@ -110,7 +111,7 @@ const LabSlip = () => {
                 </div>
             </div>
             <button onClick={handlePrint} className="print">Print</button>
-            <button className='back-home'>Home</button>
+            <Link to='/admin-dashboard/create-order'><button className='back-home'>Back</button></Link>
         </div>
     )
 }
