@@ -4,6 +4,7 @@
     --primary-blue: #29354a;
     --white: #f2f4f8;
     --medium-grey: #5c5c5c;
+    --light-grey: #ebebeb;
     --dark-grey: #141414;
     --gradient:linear-gradient(90deg, rgba(124,16,52,1) 15%, rgba(41,53,74,1) 90%);
   }
@@ -13,6 +14,7 @@
   }
   .create-order-container{
     padding: 1% 15% 1% 15%;
+    background-color: var(--light-grey);
   }
   .invoice-container{
     border: 2px solid var(--medium-grey);
@@ -92,5 +94,13 @@
     background: var(--white);
     border: 2px solid var(--medium-grey);
     border-radius: 5px;
+    padding: 2%;
+  }
+  .text-area-container{
+    margin-top: 5%;
+  }
+  .text-area{
+    display: block;
+    margin: auto;
     padding: 2%;
   }

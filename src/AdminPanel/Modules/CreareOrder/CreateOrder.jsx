@@ -32,7 +32,8 @@ const CreateOrder = () => {
         setAppointment,
         setPerUnitPrice,
         setTotalPrice,
-        setEnclosed
+        setEnclosed,
+        setNote
     } = CreateOrderInput();
     return (
         <>
@@ -151,16 +152,10 @@ const CreateOrder = () => {
                             <hr />
 
                             <Grid item xs={7} sm={7} md={7} lg={7}>
-                                <div onChange={(e) => setShade(e.target.value)} disabled={Disable} className="shade-container">
-                                    <span className='order-input-title'>Shade:</span>
-                                    <input type="radio" name='shade' value={"1"} /><span className="radio-title">1</span>
-                                    <input type="radio" name='shade' value={"2"} /><span className="radio-title">2</span>
-                                    <input type="radio" name='shade' value={"3"} /><span className="radio-title">3</span>
-                                    <input type="radio" name='shade' value={"No Shade"} /><span className="radio-title">No Shade</span>
-
-                                    {/* Shade Selector */}
-                                </div>
                                 <div className='shade-container'>
+                                    <p className="order-input-title">
+                                        Select Shade:
+                                    </p>
                                     <select onChange={(e) => setShadeValue(e.target.value)} disabled={Disable} name='shade' id="select">
                                         <option name='shade' value="" selected="true" disabled="disabled"> Please Select Shade</option>
                                         <option name='shade' value="A1">A1</option>
@@ -229,11 +224,19 @@ const CreateOrder = () => {
                                 </span>
                                 <input onChange={(e) => setTotalPrice(e.target.value)} disabled={Disable} type="text" className="order-detail-input" />
                                 <br />
-                                {/* <button disabled={Disable} className='create-btn' onClick={handleCreateOrder}>Print Job Card</button> */}
                             </Grid>
-
                         </Grid>
+                    </div>
+                </div>
+                <div className="create-order-container">
+                    <div className="invoice-container">
+                        <h3 className="invoice-heading">
+                            Add Note
+                        </h3>
+                        <div className="text-area-container">
+                            <textarea disabled={Disable} onChange={(e)=>setNote(e.target.value)} placeholder='Add Notes' className='text-area'cols="100" rows="25"/>
 
+                        </div>
                     </div>
                 </div>
                 <div className="button-container">
@@ -243,6 +246,7 @@ const CreateOrder = () => {
                     </div>
                 </div>
             </div>
+
         </>
     )
 }

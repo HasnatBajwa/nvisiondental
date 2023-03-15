@@ -27,6 +27,7 @@ const CreateOrderInput = () => {
     const [TotalPrice, setTotalPrice] = useState("");
     const [PerUnitPrice, setPerUnitPrice] = useState("");
     const [Enclosed, setEnclosed] = useState("");
+    const [Note, setNote] = useState("");
 
 
 
@@ -61,7 +62,8 @@ const CreateOrderInput = () => {
             appointment: Appointment,
             perunitprice: PerUnitPrice,
             totalprice: TotalPrice,
-            enclosed:Enclosed,
+            enclosed: Enclosed,
+            note: Note
         }
         OrderDetails.push({ ...orderData });
         console.log(OrderDetails);
@@ -125,7 +127,9 @@ const CreateOrderInput = () => {
         PerUnitPrice,
         setPerUnitPrice,
         Enclosed,
-        setEnclosed
+        setEnclosed,
+        Note,
+        setNote
 
     };
 
