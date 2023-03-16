@@ -25,7 +25,7 @@ const OrderTable = () => {
                                 }
                             }}>
                                 <TableCell>
-                                    <h4>Order No</h4>
+                                    <h4>Invoice No</h4>
                                 </TableCell>
                                 <TableCell>
                                     <h4>PAN</h4>
@@ -60,33 +60,33 @@ const OrderTable = () => {
                             {OrderData.map((data,i)=>{
                                 return(
                                     <>
-                                    <TableRow>
+                                    <TableRow key={i} >
                                         <TableCell>
-                                            {data.orderNo}
+                                            {data.invoice}
                                         </TableCell>
                                         <TableCell>
                                             {data.pan}
                                         </TableCell>
                                         <TableCell>
-                                            {data.entryDate}
+                                            {data.orderdate}
                                         </TableCell>
                                         <TableCell>
-                                            {data.CorD}
+                                            {data.client}
                                         </TableCell>
                                         <TableCell>
                                             {data.patient}
                                         </TableCell>
                                         <TableCell>
-                                            {data.services}
+                                            {data.product}
                                         </TableCell>
                                         <TableCell>
-                                            {data.dep}
+                                            {data.dpt}
                                         </TableCell>
                                         <TableCell>
                                             {data.status}
                                         </TableCell>
                                         <TableCell>
-                                            {data.dueDate}
+                                            {data.duedate}
                                         </TableCell>
                                         <TableCell>
                                             {data.action}

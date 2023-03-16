@@ -10,6 +10,7 @@ import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import InventoryIcon from '@mui/icons-material/Inventory';
 import { Link } from 'react-router-dom'
 const DashboardNav = () => {
     const [open, setOpen] = React.useState(false);
@@ -48,7 +49,7 @@ const DashboardNav = () => {
                     anchor="bottom"
                     onClose={handleDrawerClose}
                     open={open}
-                    PaperProps={{ style: { width: '50%', height:'800px' } }}
+                    PaperProps={{ style: { width: '50%', height: '800px' } }}
                     variant='temporary'
                 >
                     <div className="dashboard-nav">
@@ -57,7 +58,7 @@ const DashboardNav = () => {
                         <div className="dashboard-menu-container">
                             <div className="dashboard-menu">
                                 <button className='dashboard-menu-btn'>
-                                <Link className='nav-link' to='/admin-dashboard'><GridViewIcon /> <span className="menu-txt">DASHBOARD</span></Link>    
+                                    <Link className='nav-link' to='/admin-dashboard'><GridViewIcon /> <span className="menu-txt">DASHBOARD</span></Link>
                                 </button>
                             </div>
                             <div className="dashboard-menu">
@@ -94,6 +95,15 @@ const DashboardNav = () => {
                                 <button className='dashboard-menu-btn'>
                                     <AccountBalanceWalletIcon /> <span className="menu-txt">ACCOUNTING</span>
                                 </button>
+                            </div>
+                            <div className="dashboard-menu">
+                                <Link className='nav-link' to='/admin-dashboard/add-products'>
+                                    <button className='dashboard-menu-btn'>
+
+                                        <InventoryIcon /> <span className="menu-txt">ADD PRODUCTS</span>
+
+                                    </button>
+                                </Link>
                             </div>
                             <div className="dashboard-menu">
                                 <button className='dashboard-menu-btn'>

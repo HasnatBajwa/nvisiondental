@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import OrderDetails from '../../Data/OrderDetails/OrderDetails';
-
+import { db } from '../../../Config/Firebase/Firebase-config';
+import { addDoc, collection } from '@firebase/firestore/lite';
 const CreateOrderInput = () => {
 
     const [Invoice, setInvoice] = useState("");
@@ -16,7 +17,6 @@ const CreateOrderInput = () => {
     const [WorkCategory, setWorkCategory] = useState("");
     const [Product, setProduct] = useState("");
     const [Jaw, setJaw] = useState("");
-    const [Shade, setShade] = useState("");
     const [ShadeValue, setShadeValue] = useState("");
     const [Margin, setMargin] = useState("");
     const [StainValue, setStainValue] = useState("");
@@ -33,12 +33,64 @@ const CreateOrderInput = () => {
 
     const CreateInvoice = () => {
         setDisable(false);
+        let date = new Date().toLocaleString() + "";
+        setOrderDate(date);
         setInvoice(Math.floor(Math.random() * 90000) + 10000);
     }
-    const handleCreateOrder = () => {
 
 
+    const handleCreateOrder = async () => {
+        try {
+            await addDoc(collection(db, "labslip"), {
+                invoice: Invoice,
+                client: Client,
+                patient: Patient,
+                orderdate: OrderDate,
+                category: WorkCategory,
+                product: Product,
+                shade: ShadeValue,
+                enclosed: Enclosed,
+                duedate: DueDate,
+                desc: Note
+            })
+        } catch (error) {
+            console.log(error.message);
+        }
+
+        try {
+            await addDoc(collection(db, "order-details"), {
+                invoice: Invoice,
+                client: Client,
+                patient: Patient,
+                orderdate: OrderDate,
+                status: Status,
+                dpt: Department,
+                delivery: Delivery,
+                casetype: CaseType,
+                pan: WorkingPan,
+                category: WorkCategory,
+                product: Product,
+                jaw: Jaw,
+                shade: ShadeValue,
+                margin: Margin,
+                stain: StainValue,
+                translucency: Translucency,
+                poticdesign: PonticDesign,
+                duedate: DueDate,
+                appointment: Appointment,
+                perunitprice: PerUnitPrice,
+                totalprice: TotalPrice,
+                enclosed: Enclosed,
+                desc: Note
+
+            })
+
+        } catch (error) {
+            console.log(error.message);
+        }
         alert("Order detail fetched");
+
+
         let orderData = {
             invoice: Invoice,
             client: Client,
@@ -52,7 +104,6 @@ const CreateOrderInput = () => {
             workcategory: WorkCategory,
             product: Product,
             jaw: Jaw,
-            shade: Shade,
             shadevalue: ShadeValue,
             margin: Margin,
             stainvalue: StainValue,
@@ -65,19 +116,21 @@ const CreateOrderInput = () => {
             enclosed: Enclosed,
             note: Note
         }
+
+
+
         OrderDetails.push({ ...orderData });
         console.log(OrderDetails);
-        setInvoice("");
-        setClient("");
-        setPatient("");
-        setOrderDate("");
-        setStatus("");
-        setDepartment("");
-        setDelivery("");
-        setCaseType(false);
-        setWorkingPan("");
-        setDisable(true);
-
+        // setInvoice("");
+        // setClient("");
+        // setPatient("");
+        // setOrderDate("");
+        // setStatus("");
+        // setDepartment("");
+        // setDelivery("");
+        // setCaseType(false);
+        // setWorkingPan("");
+        // setDisable(true);
     }
     return {
         Invoice,
@@ -106,8 +159,6 @@ const CreateOrderInput = () => {
         setProduct,
         Jaw,
         setJaw,
-        Shade,
-        setShade,
         Margin,
         ShadeValue,
         setShadeValue,
@@ -138,3 +189,6 @@ const CreateOrderInput = () => {
 }
 
 export default CreateOrderInput
+
+
+        // });

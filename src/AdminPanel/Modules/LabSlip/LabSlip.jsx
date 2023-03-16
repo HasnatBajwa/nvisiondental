@@ -59,6 +59,15 @@ const LabSlip = () => {
                                     <hr />
                                     <div>
                                         <span className="heading">
+                                            OrderDate:
+                                        </span>&nbsp; &nbsp;
+                                        <span className="heading-txt">
+                                            {data.orderdate}
+                                        </span>
+                                    </div>
+                                    <hr />
+                                    <div>
+                                        <span className="heading">
                                             Due Date:
                                         </span>&nbsp; &nbsp;
                                         <span className="heading-txt">
@@ -102,6 +111,15 @@ const LabSlip = () => {
                                         </span>&nbsp; &nbsp;
                                         <span className="heading-txt">
                                             {data.shadevalue}
+                                        </span>
+                                    </div>
+                                    <hr />
+                                    <div>
+                                        <span className="heading">
+                                            Description:
+                                        </span>&nbsp; &nbsp;
+                                        <span className="heading-txt">
+                                            {data.note}
                                         </span>
                                     </div>
                                 </>

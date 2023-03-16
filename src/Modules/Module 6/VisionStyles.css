@@ -1,15 +1,17 @@
 :root {
-  --primary-red: #7c1034;
+  /* --primary-red: #7c1034; */
+  --primary-red: #483d8b;
+  --gradient:linear-gradient(90deg, var(--primary-red) 15%, var(--primary-blue) 90%);
   --primary-black: #000000;
   --primary-blue: #29354a;
   --white: #f2f4f8;
   --medium-grey: #5c5c5c;
   --dark-grey: #141414;
-  --gradient: linear-gradient(
+  /* --gradient: linear-gradient(
     90deg,
     rgba(124, 16, 52, 1) 15%,
     rgba(41, 53, 74, 1) 90%
-  );
+  ); */
 }
 .vision-container {
   padding: 2% 15% 2% 15%;

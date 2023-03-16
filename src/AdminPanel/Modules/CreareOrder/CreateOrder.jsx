@@ -33,7 +33,8 @@ const CreateOrder = () => {
         setPerUnitPrice,
         setTotalPrice,
         setEnclosed,
-        setNote
+        setNote,
+        OrderDate
     } = CreateOrderInput();
     return (
         <>
@@ -73,7 +74,8 @@ const CreateOrder = () => {
                                 <p className="order-input-title">
                                     Ordered:
                                 </p>
-                                <input onChange={(e) => setOrderDate(e.target.value)} disabled={Disable} type="date" className="order-detail-input" />
+                                <input onChange={(e) => setOrderDate(e.target.value)} value={OrderDate} disabled
+                                 type="text" className="order-detail-input" />
                             </Grid>
                             <Grid item xs={6} sm={6} md={6} lg={6}>
                                 <p className="order-input-title">
@@ -185,9 +187,9 @@ const CreateOrder = () => {
                                 <div onChange={(e) => setTranslucency(e.target.value)} disabled={Disable} className="shade-container">
                                     <span className='order-input-title'>Translucency:</span>
                                     <input type="radio" name='translucency' value={"NA"} /><span className="radio-title">NA</span>
-                                    <input type="radio" name='translucency' value={"Low"} /><span className="radio-title">Standard</span>
-                                    <input type="radio" name='translucency' value={"Medium"} /><span className="radio-title">Metal</span>
-                                    <input type="radio" name='translucency' value={"High"} /><span className="radio-title">Porcelain</span>
+                                    <input type="radio" name='translucency' value={"Low"} /><span className="radio-title">Low</span>
+                                    <input type="radio" name='translucency' value={"Medium"} /><span className="radio-title">Medium</span>
+                                    <input type="radio" name='translucency' value={"High"} /><span className="radio-title">High</span>
                                 </div>
                                 <div onChange={(e) => setPonticDesign(e.target.value)} disabled={Disable} className="shade-container">
                                     <span className='order-input-title'>Pontic Design:</span>
