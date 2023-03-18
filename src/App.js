@@ -14,6 +14,7 @@ import Dashboard from './AdminPanel/Pages/Dashboard/DashBoard'
 import Orders from './AdminPanel/Pages/Orders/Orders';
 import LabSlip from './AdminPanel/Modules/LabSlip/LabSlip';
 import AddProducts from './AdminPanel/Modules/AddProducts/AddProducts';
+import CreateInvoice from './AdminPanel/Modules/CreateInvoice/CreateInvoice';
 function App() {
   useEffect(() => {
     AOS.init({
@@ -37,6 +38,8 @@ function App() {
           <Route path='/admin-dashboard/create-order' exact element={<Orders />} />
           <Route path='/admin-dashboard/lab-slip' exact element={<LabSlip />} />
           <Route path='/admin-dashboard/add-products' exact element={<AddProducts />} />
+          <Route path='/admin-dashboard/create-invoice' exact element={<CreateInvoice />} />
+
         </Routes>
       </BrowserRouter>
     </>

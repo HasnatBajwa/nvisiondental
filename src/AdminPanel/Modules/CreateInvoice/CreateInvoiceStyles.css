@@ -1,0 +1,113 @@
+:root {
+  /* --primary-red: #7c1034; */
+  --primary-red: #483d8b;
+  --gradient: linear-gradient(
+    90deg,
+    var(--primary-red) 15%,
+    var(--primary-blue) 90%
+  );
+  --primary-black: #000000;
+  --primary-blue: #29354a;
+  --white: #f2f4f8;
+  --medium-grey: #5c5c5c;
+  --light-grey: #ebebeb;
+  --dark-grey: #141414;
+  /* --gradient:linear-gradient(90deg, rgba(124,16,52,1) 15%, rgba(41,53,74,1) 90%); */
+}
+.invoice-generator {
+  margin-top: 2%;
+}
+.client-name {
+  color: var(--primary-red);
+  text-align: center;
+}
+.invoice-info-container {
+  border: 2px solid var(--medium-grey);
+  border-radius: 5px;
+  padding: 2% 2% 2% 2%;
+  margin-top: 1%;
+}
+.client-detail-container {
+  border: 2px solid var(--medium-grey);
+  border-radius: 5px;
+  padding: 2% 2% 2% 2%;
+}
+.invoice {
+  margin-top: 5%;
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+.inv {
+  color: red;
+  font-weight: 700;
+  font-size: x-large;
+}
+.txt {
+  text-align: center;
+  margin-top: 2%;
+  color: var(--dark-grey);
+  font-weight: 700;
+}
+.company-logo-inv {
+  width: 25%;
+}
+.inv-txt {
+  float: right;
+  font-size: x-large;
+  color: var(--medium-grey);
+  font-weight: 700;
+}
+.img-inv-container {
+  padding: 0% 10% 0% 10%;
+}
+.inv-due {
+  text-align: center;
+  color: var(--medium-grey);
+  font-size: large;
+  font-weight: 700;
+}
+.sender {
+  font-size: x-large;
+  font-weight: 700;
+  color: var(--medium-grey);
+}
+.name {
+  font-size: medium;
+  color: red;
+}
+.inv-sender {
+  margin-left: 1%;
+  margin-top: 2%;
+  border: 2px solid var(--medium-grey);
+  border-radius: 5px;
+  padding: 5%;
+}
+.inv-tab {
+  margin-top: 2%;
+}
+.inv-receipt {
+  padding: 2% 5% 2% 5%;
+  float: right;
+}
+.receipt-txt {
+  color: var(--medium-grey);
+  font-size: medium;
+  text-align: center;
+}
+.notes-heading {
+  color: var(--medium-grey);
+}
+.notes-txt {
+  color: var(--medium-grey);
+  margin-top: 1%;
+}
+.invoice-print {
+  margin-left: 47%;
+  padding: 0.5% 2% 0.5% 2%;
+  background: var(--primary-blue);
+  cursor: pointer;
+  color: var(--white);
+  font-size: medium;
+  border-radius: 5%;
+}

@@ -89,6 +89,8 @@ const DashboardNav = () => {
                                 >
                                     <MenuItem onClick={handleClose}>All Orders</MenuItem>
                                     <MenuItem onClick={handleClose}>Search Orders</MenuItem>
+                                    <Link className='nav-link' to='/admin-dashboard/create-invoice'> <MenuItem >Create Invoice</MenuItem></Link>
+
                                 </Menu>
                             </div>
                             <div className="dashboard-menu">
