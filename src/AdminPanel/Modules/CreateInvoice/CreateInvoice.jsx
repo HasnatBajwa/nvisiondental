@@ -1,6 +1,5 @@
 import React from 'react'
 import './CreateInvoiceStyles.css'
-import { useReactToPrint } from 'react-to-print';
 import Header from '../../Components/Header/Header';
 import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
@@ -12,16 +11,25 @@ import TableRow from '@mui/material/TableRow';
 import OrderData from '../../Data/OrderTableData/OrderTableData';
 import Logo from '../../../Assets/Logo.png'
 import { Grid } from '@mui/material';
+import createInvoiceInput from './CreateInvoiceInput';
 const CreateInvoice = () => {
-    const [invoiceData, setinvoiceData] = React.useState(null);
-    const invoiceRef = React.useRef();
-    const handlePrint = useReactToPrint({
-        content: () => invoiceRef.current,
-    });
+    const {
+        createBill,
+        generateBill,
+        addToInvoiceHandler,
+        invoiceData,
+        invoiceRef,
+        handlePrint,
+        disable
+    } = createInvoiceInput()
+
 
     return (
         <>
             <Header />
+            <div className="invoice-handler">
+                <button className='create-bill' onClick={generateBill}>Create Invoice</button>
+            </div>
             <div className="create-invoice-container">
                 <Paper sx={{ width: '100%', overflow: 'hidden' }}>
                     <TableContainer sx={{ maxHeight: 440 }}>
@@ -67,7 +75,7 @@ const CreateInvoice = () => {
                                     return (
                                         <>
                                             <TableRow key={i} >
-                                                <TableCell>
+                                                <TableCell className='in'>
                                                     {data.invoice}
                                                 </TableCell>
                                                 <TableCell>
@@ -92,7 +100,7 @@ const CreateInvoice = () => {
                                                     {data.totalprice}
                                                 </TableCell>
                                                 <TableCell>
-                                                    <button key={i} onClick={() => setinvoiceData(data)}>Create Invoice</button>
+                                                    <button key={i} className='add-to-bill' disabled={disable} onClick={() => addToInvoiceHandler(data)}>Add To Bill</button>
                                                 </TableCell>
                                             </TableRow>
                                         </>
@@ -105,7 +113,7 @@ const CreateInvoice = () => {
 
                 </Paper>
             </div>
-
+            {/* Invoice Header */}
             <div className="invoice-generator">
                 <Grid container justifyContent={'center'}>
                     {invoiceData ?
@@ -113,15 +121,15 @@ const CreateInvoice = () => {
                             <div className="client-detail-container">
                                 <Grid container>
                                     <p className="invoice-no">
-                                        Invoice No: <span className='inv'>{invoiceData.invoice}</span>
+                                        Bill No: <span className='inv'>{createBill}</span>
                                     </p>
                                     <Grid item xs={12} sm={12} md={12} lg={12}>
                                         <h1 className='client-name'>{invoiceData.client}</h1>
                                     </Grid>
                                     <Grid item xs={12} sm={12} md={12} lg={12}>
-                                        <Paper sx={{ width: '100%', overflow: 'hidden' }}>
-                                            <TableContainer sx={{ maxHeight: 440 }}>
-                                                <Table stickyHeader aria-label="sticky table">
+                                        <Paper>
+                                            <TableContainer >
+                                                <Table stickyHeader aria-label="">
                                                     <TableHead >
                                                         <TableRow sx={{
                                                             "& th": {
@@ -219,11 +227,13 @@ const CreateInvoice = () => {
                                             </p>
                                         </div>
                                     </Grid>
+
+                                    {/* Invoice Details */}
                                     <Grid item xs={12} sm={12} md={12} lg={12}>
                                         <div className="inv-tab">
-                                            <Paper sx={{ width: '100%', overflow: 'hidden' }}>
-                                                <TableContainer sx={{ maxHeight: 440 }}>
-                                                    <Table stickyHeader aria-label="sticky table">
+                                            <Paper >
+                                                <TableContainer >
+                                                    <Table>
                                                         <TableHead >
                                                             <TableRow sx={{
                                                                 "& th": {
@@ -258,33 +268,38 @@ const CreateInvoice = () => {
                                                             </TableRow>
                                                         </TableHead>
                                                         <TableBody>
-
-                                                            <TableRow >
-                                                                <TableCell>
-                                                                    {invoiceData.invoice}
-                                                                </TableCell>
-                                                                <TableCell>
-                                                                    {invoiceData.orderdate}
-                                                                </TableCell>
-                                                                <TableCell>
-                                                                    {invoiceData.client}
-                                                                </TableCell>
-                                                                <TableCell>
-                                                                    {invoiceData.patient}
-                                                                </TableCell>
-                                                                <TableCell>
-                                                                    {invoiceData.category}
-                                                                </TableCell>
-                                                                <TableCell>
-                                                                    {invoiceData.product}
-                                                                </TableCell>
-                                                                <TableCell>
-                                                                    {invoiceData.perunitprice}
-                                                                </TableCell>
-                                                                <TableCell>
-                                                                    {invoiceData.totalprice}
-                                                                </TableCell>
-                                                            </TableRow>
+                                                            {invoiceData.map((data, i) => {
+                                                                return (
+                                                                    <>
+                                                                        <TableRow key={i}>
+                                                                            <TableCell>
+                                                                                {data.invoice}
+                                                                            </TableCell>
+                                                                            <TableCell>
+                                                                                {data.orderdate}
+                                                                            </TableCell>
+                                                                            <TableCell>
+                                                                                {data.client}
+                                                                            </TableCell>
+                                                                            <TableCell>
+                                                                                {data.patient}
+                                                                            </TableCell>
+                                                                            <TableCell>
+                                                                                {data.category}
+                                                                            </TableCell>
+                                                                            <TableCell>
+                                                                                {data.product}
+                                                                            </TableCell>
+                                                                            <TableCell>
+                                                                                {data.perunitprice}
+                                                                            </TableCell>
+                                                                            <TableCell>
+                                                                                {data.totalprice}
+                                                                            </TableCell>
+                                                                        </TableRow>
+                                                                    </>
+                                                                )
+                                                            })}
                                                         </TableBody>
                                                     </Table>
                                                 </TableContainer>
@@ -297,24 +312,23 @@ const CreateInvoice = () => {
                                             <p className="inv">PREVIOUS DUE: <span className="receipt-txt">PKR {0} /-</span></p>
                                             <hr />
                                             <br /><br />
-                                            <p className="inv">TOTAL DUE: <span className="receipt-txt">PKR {parseInt(invoiceData.totalprice)+500} /-</span></p>
+                                            <p className="inv">TOTAL DUE: <span className="receipt-txt">PKR {parseInt(invoiceData.totalprice) + 0} /-</span></p>
 
                                         </div>
                                     </Grid>
                                     <div className="receipt-noteS">
-                                            <h2 className='notes-heading'>
-                                                Important Notes
-                                            </h2>
-                                            <p className="notes-txt">1) If any payment is missing from the statement, please let us know as soon as possible.
-                                             Kindly Pay the amount within the due date ({invoiceData.duedate}).  If you have paid the amount after due date it will be shown in the next month</p>
-                                            <p className="notes-txt">2) Thankyou very much. We appreciate your business. Please Clear your dues as soon as possible</p>
-                                        </div>
+                                        <h2 className='notes-heading'>
+                                            Important Notes
+                                        </h2>
+                                        <p className="notes-txt">1) If any payment is missing from the statement, please let us know as soon as possible.
+                                            Kindly Pay the amount within the due date ({invoiceData.duedate}).  If you have paid the amount after due date it will be shown in the next month</p>
+                                        <p className="notes-txt">2) Thankyou very much. We appreciate your business. Please Clear your dues as soon as possible</p>
+                                    </div>
                                 </Grid>
                             </div>
 
 
                         </div>
-
                         :
                         <div>
                             No Data Selected
@@ -322,7 +336,7 @@ const CreateInvoice = () => {
                     }
                 </Grid>
             </div>
-            <button className='invoice-print' onClick={handlePrint}>print</button>
+            <button className='invoice-print' onClick={handlePrint}>PRINT</button>
         </>
     )
 }

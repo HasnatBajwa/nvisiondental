@@ -20,26 +20,26 @@ const Clientale = () => {
                     </Grid>
                     <Grid item xs={4} sm={4} md={4} lg={4}>
                         <h1 className="clientale-heading">
-                            15+
+                            70+
                         </h1>
                         <p className="clientale-txt">
-                            <span className="clientale-title">Years Experience</span>
+                            <span className="clientale-title">Dentists</span>
                         </p>
                     </Grid>
                     <Grid item xs={4} sm={4} md={4} lg={4}>
                         <h1 className="clientale-heading">
-                            25K +
+                            50 +
                         </h1>
                         <p className="clientale-txt">
-                            <span className="clientale-title">Happy Clients</span>
+                            <span className="clientale-title">Clinics</span>
                         </p>
                     </Grid>
                     <Grid item xs={4} sm={4} md={4} lg={4}>
                         <h1 className="clientale-heading">
-                            100%
+                            1000 +
                         </h1>
                         <p className="clientale-txt">
-                            <span className="clientale-title">Client Satisfaction</span>
+                            <span className="clientale-title">Cases</span>
                         </p>
                     </Grid>
                 </Grid>

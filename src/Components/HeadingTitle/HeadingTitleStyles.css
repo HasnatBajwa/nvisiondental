@@ -1,6 +1,7 @@
 :root {
     /* --primary-red: #7c1034; */
-  --primary-red: #483d8b;
+    --primary-red: #413A6D;
+
   --gradient:linear-gradient(90deg, var(--primary-red) 15%, var(--primary-blue) 90%);
 
     --primary-black: #000000;

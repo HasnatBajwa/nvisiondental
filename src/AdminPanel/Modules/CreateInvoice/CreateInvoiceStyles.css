@@ -1,6 +1,6 @@
 :root {
   /* --primary-red: #7c1034; */
-  --primary-red: #483d8b;
+  --primary-red: #413A6D;
   --gradient: linear-gradient(
     90deg,
     var(--primary-red) 15%,
@@ -13,6 +13,27 @@
   --light-grey: #ebebeb;
   --dark-grey: #141414;
   /* --gradient:linear-gradient(90deg, rgba(124,16,52,1) 15%, rgba(41,53,74,1) 90%); */
+}
+.invoice-handler{
+  background-color: var(--light-grey);
+  padding: 2%;
+}
+.create-bill{
+  float: right;
+  background-color: var(--primary-red);
+  padding: 0.5% 2% 0.5% 2%;
+  border: none;
+  color: var(--light-grey);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.add-to-bill{
+  padding: 5%;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 .invoice-generator {
   margin-top: 2%;
