@@ -1,0 +1,108 @@
+:root {
+  /* --primary-red: #7c1034; */
+  --primary-red: #413a6d;
+  --gradient: linear-gradient(
+    90deg,
+    var(--primary-red) 15%,
+    var(--primary-blue) 90%
+  );
+  --primary-black: #000000;
+  --primary-blue: #29354a;
+  --white: #f2f4f8;
+  --medium-grey: #5c5c5c;
+  --light-grey: #ebebeb;
+  --dark-grey: #141414;
+  /* --gradient: linear-gradient(
+      90deg,
+      rgba(124, 16, 52, 1) 15%,
+      rgba(41, 53, 74, 1) 90%
+    ); */
+}
+.add-client-container {
+  padding: 2% 15% 2% 15%;
+  background-color: whitesmoke;
+}
+.add-client-input {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 2% 10% 5% 10%;
+}
+.add-client-input:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.client-txt {
+  color: var(--primary-red);
+  font-weight: 700;
+  margin-right: 2%;
+}
+.client-input {
+  width: 100%;
+  padding: 2%;
+  font-size: large;
+  border: 0.5px solid var(--primary-blue);
+  border-radius: 5px;
+}
+.client-input:focus{
+    background-color: rgb(207, 238, 238);
+}
+.client-heading {
+  margin-bottom: 2%;
+  text-align: center;
+  color: var(--primary-red);
+  text-decoration: underline;
+}
+.client-form {
+    margin-top: 3%;
+  margin-bottom: 3%;
+}
+.search-bar {
+  padding: 2% 10% 2% 10%;
+}
+.search-btn {
+  padding: 3% 5% 3% 5%;
+  border: none;
+  background-color: var(--primary-blue);
+  border-radius: 5px;
+  color: var(--white);
+}
+.search-input{
+    padding: 2%;
+}
+.client-form-heading{
+    color: rgb(116, 7, 7);
+    margin: 1%;
+}
+.add-client{
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    background-color: var(--primary-red);
+    padding: 1% 3% 1% 3%;
+    border: none;
+    border-radius: 5px;
+    color: var(--light-grey);
+    cursor: pointer;
+}
+.save{
+    float: right;
+    background-color: var(--primary-red);
+    color: var(--light-grey);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 1% 3% 1% 3%;
+}
+.client-table{
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 2% 5% 2% 5%;
+}
+.client-table:hover{
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.action-btn{
+  color: var(--medium-grey);
+  cursor: pointer;
+}

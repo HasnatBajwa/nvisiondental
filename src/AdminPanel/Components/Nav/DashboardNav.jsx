@@ -11,6 +11,7 @@ import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import InventoryIcon from '@mui/icons-material/Inventory';
+import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import { Link } from 'react-router-dom'
 const DashboardNav = () => {
     const [open, setOpen] = React.useState(false);
@@ -46,10 +47,10 @@ const DashboardNav = () => {
                 <MenuIcon className='icon' onClick={handleDrawerOpen} />
 
                 <Drawer
-                    anchor="bottom"
+                    anchor="left"
                     onClose={handleDrawerClose}
                     open={open}
-                    PaperProps={{ style: { width: '50%', height: '800px' } }}
+                    PaperProps={{ style: { width: '10%', height: '100%' } }}
                     variant='temporary'
                 >
                     <div className="dashboard-nav">
@@ -104,6 +105,14 @@ const DashboardNav = () => {
 
                                         <InventoryIcon /> <span className="menu-txt">ADD PRODUCTS</span>
 
+                                    </button>
+                                </Link>
+                            </div>
+                            <div className="dashboard-menu">
+                                <Link className='nav-link' to='/admin-dashboard/add-client'>
+                                    <button className='dashboard-menu-btn'>
+
+                                        < AccountBoxIcon /> <span className="menu-txt">ADD CLIENTS</span>
                                     </button>
                                 </Link>
                             </div>
