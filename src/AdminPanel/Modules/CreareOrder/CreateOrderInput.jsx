@@ -28,6 +28,8 @@ const CreateOrderInput = () => {
     const [PerUnitPrice, setPerUnitPrice] = useState("");
     const [Enclosed, setEnclosed] = useState("");
     const [Note, setNote] = useState("");
+    const [clientAddress, setclientAddress] = useState("");
+
 
 
 
@@ -40,6 +42,7 @@ const CreateOrderInput = () => {
 
 
     const handleCreateOrder = async () => {
+        console.log(clientAddress);
         try {
             await addDoc(collection(db, "labslip"), {
                 invoice: Invoice,
@@ -81,7 +84,8 @@ const CreateOrderInput = () => {
                 perunitprice: PerUnitPrice,
                 totalprice: TotalPrice,
                 enclosed: Enclosed,
-                desc: Note
+                desc: Note,
+                clientAddress:clientAddress
 
             })
 
@@ -114,7 +118,9 @@ const CreateOrderInput = () => {
             perunitprice: PerUnitPrice,
             totalprice: TotalPrice,
             enclosed: Enclosed,
-            note: Note
+            note: Note,
+            clientAddress:clientAddress
+
         }
 
 
@@ -180,7 +186,8 @@ const CreateOrderInput = () => {
         Enclosed,
         setEnclosed,
         Note,
-        setNote
+        setNote,
+        setclientAddress
 
     };
 

@@ -16,13 +16,17 @@
   }
   .create-order-container{
     padding: 1% 15% 1% 15%;
-    background-color: var(--light-grey);
+    background-color: whitesmoke;
   }
   .invoice-container{
-    border: 2px solid var(--medium-grey);
-    border-radius: 5px;
-    padding: 2%;
     background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding:5% 7% 5% 7%;
+  }
+  .invoice-container:hover{
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
   }
   .invoice-heading{
    color: var(--medium-grey);

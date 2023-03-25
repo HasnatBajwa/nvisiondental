@@ -1,7 +1,7 @@
 import { useState } from "react"
 import ClientData from "../../Data/Clientdata/ClientData";
 import { db } from '../../../Config/Firebase/Firebase-config';
-import { addDoc, collection,getDoc,updateDoc,deleteDoc, doc } from '@firebase/firestore/lite';
+import { addDoc, collection, getDoc, updateDoc, deleteDoc, doc } from '@firebase/firestore/lite';
 const AddClientInput = () => {
     const [ClientId, setClientId] = useState("");
     const [ClientName, setClientName] = useState("")
@@ -35,36 +35,36 @@ const AddClientInput = () => {
 
     // Saving Client Information in Data Base
     const SaveClientInfo = async () => {
-if (ClientId !== "") {
-    
-
-        try {
-            await addDoc(collection(db, "Clients"), {
-                id: ClientId,
-                clientName: ClientName,
-                practiceName: PracticeName,
-                address: Address,
-                country: Country,
-                city: City,
-                zipCode: Zipcode,
-                email: Email,
-                phoneNo: PhoneNo,
-                mobileNo: MobileNo,
-                pricing: Pricing
-            })
+        if (ClientId !== "") {
 
 
-        alert("client data saved")
+            try {
+                await addDoc(collection(db, "Clients"), {
+                    clientid: ClientId,
+                    clientName: ClientName,
+                    practiceName: PracticeName,
+                    address: Address,
+                    country: Country,
+                    city: City,
+                    zipCode: Zipcode,
+                    email: Email,
+                    phoneNo: PhoneNo,
+                    mobileNo: MobileNo,
+                    pricing: Pricing
+                })
 
-        } catch (error) {
-            console.log(error.message);
+
+                alert("client data saved")
+
+            } catch (error) {
+                console.log(error.message);
+            }
         }
-    }
-else{
-    alert("Cant Update Data No ID Found")
-}
+        else {
+            alert("Cant Update Data No ID Found")
+        }
         let clientInfo = {
-            id: ClientId,
+            clientid: ClientId,
             clientName: ClientName,
             practiceName: PracticeName,
             address: Address,
@@ -98,7 +98,7 @@ else{
 
     // Updating Client Data
     const updatehandler = (data) => {
-     console.log(data);
+        console.log(data);
     }
 
 
@@ -110,7 +110,16 @@ else{
 
 
 
-
+    const deleteHandler = (data) => {
+        const id = data.id
+        const delRef = doc(db, "Clients", id)
+        try {
+            deleteDoc(delRef);
+            alert("Client Deleted")
+        } catch (error) {
+            console.log(error.message);
+        }
+    }
 
 
 
@@ -144,7 +153,8 @@ else{
         CreateNewClient,
         SaveClientInfo,
         updatehandler,
-      
+        deleteHandler
+
 
     }
 }

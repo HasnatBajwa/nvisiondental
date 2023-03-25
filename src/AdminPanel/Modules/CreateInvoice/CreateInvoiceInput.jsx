@@ -1,41 +1,35 @@
-import { useState, useRef } from "react";
-import { useReactToPrint } from 'react-to-print';
+import { useState } from "react"
+export const clientBill = [
 
+]
 const CreateInvoiceInput = () => {
-    const [createBill, setcreateBill] = useState("");
-    const [invoiceData, setinvoiceData] = useState([]);
-    const [clientData, setclientData] = useState(null);
-    const [disable, setDisable] = useState(true);
+    const [ClientBill, setClientBill] = useState([]);
+    const [DueDate, setDueDate] = useState([]);
+   
 
-    // Create Bill Number
-    const generateBill = () => {
-        setcreateBill(Math.floor(Math.random() * 900) + 10000);
-        setDisable(false)
-
+    // Creating Bill NO
+    const createBill = ()=>{
+ 
+        setClientBill(Math.floor(Math.random() * 90000) + 10000);
     }
-    // Add To Invoice
-    const addToInvoiceHandler = (item) => {
 
-        setinvoiceData([...invoiceData, item])
-        console.log(invoiceData);
+    const showClientBill = (data) => {
+       let billData = {
+        clientid:data.clientid,
+        clientname:data.clientName,
+
+       }
+       clientBill.push({...billData})
+    console.log(clientBill);
     }
-    // Print Handler  
-    const invoiceRef = useRef();
-    const handlePrint = useReactToPrint({
-        content: () => invoiceRef.current,
-    });
     return {
+        showClientBill,
+        ClientBill,
         createBill,
-        setcreateBill,
-        invoiceData,
-        clientData,
-        setclientData,
-        addToInvoiceHandler,
-        generateBill,
-        invoiceRef,
-        handlePrint,
-        disable
-
+        setDueDate,
+        DueDate
     }
+
 }
+
 export default CreateInvoiceInput

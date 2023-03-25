@@ -9,10 +9,12 @@ import TableRow from '@mui/material/TableRow';
 import ClientData from '../../Data/Clientdata/ClientData';
 import EditIcon from '@mui/icons-material/Edit';
 import AddClientInput from './AddClientInput';
+import DeleteIcon from '@mui/icons-material/Delete';
 const ClientTable = () => {
     const {
-        updatehandler
-    } =AddClientInput();
+        updatehandler,
+        deleteHandler
+    } = AddClientInput();
     return (
         <>
             <Paper sx={{ width: '100%', overflow: 'hidden' }}>
@@ -88,14 +90,16 @@ const ClientTable = () => {
                                             </TableCell>
                                             <TableCell>
                                                 <span className="clientdata-txt"> {data.email}</span>
-                                            </TableCell> <TableCell>
+                                            </TableCell>
+                                            <TableCell>
                                                 <span className="clientdata-txt"> {data.mobileNo}</span>
                                             </TableCell>
                                             <TableCell>
                                                 <span className="clientdata-txt"> {data.phoneNo}</span>
                                             </TableCell>
                                             <TableCell>
-                                                <span onClick={()=>updatehandler(data)} className="action-btn" > <EditIcon /></span>
+                                                <span onClick={() => updatehandler(data)} className="action-btn" > <EditIcon /></span>
+                                                <span onClick={() => deleteHandler(data)} className="action-btn" > <DeleteIcon /></span>
                                             </TableCell>
                                         </TableRow>
                                     </>

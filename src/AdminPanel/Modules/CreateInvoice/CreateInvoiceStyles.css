@@ -1,6 +1,6 @@
 :root {
   /* --primary-red: #7c1034; */
-  --primary-red: #413A6D;
+  --primary-red: #413a6d;
   --gradient: linear-gradient(
     90deg,
     var(--primary-red) 15%,
@@ -14,121 +14,43 @@
   --dark-grey: #141414;
   /* --gradient:linear-gradient(90deg, rgba(124,16,52,1) 15%, rgba(41,53,74,1) 90%); */
 }
-.invoice-handler{
-  background-color: var(--light-grey);
-  padding: 2%;
+.search-bar-container {
+  background-color: whitesmoke;
+  padding: 1% 15% 1% 15%;
 }
-.create-bill{
-  float: right;
-  background-color: var(--primary-red);
-  padding: 0.5% 2% 0.5% 2%;
-  border: none;
-  color: var(--light-grey);
-  border-radius: 5px;
-  cursor: pointer;
-}
-.add-to-bill{
-  padding: 5%;
-  background-color: var(--primary-blue);
-  color: var(--white);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.invoice-generator {
-  margin-top: 2%;
-}
-.client-name {
-  color: var(--primary-red);
-  text-align: center;
-}
-.invoice-info-container {
-  border: 2px solid var(--medium-grey);
-  border-radius: 5px;
-  padding: 2% 2% 2% 2%;
-  margin-top: 1%;
-}
-.client-detail-container {
-  border: 2px solid var(--medium-grey);
-  border-radius: 5px;
-  padding: 2% 2% 2% 2%;
+.create-invoice-container {
+  background-color: whitesmoke;
+  padding: 1% 5% 1% 5%;
 }
 .invoice {
-  margin-top: 5%;
-  width: 90%;
-  display: block;
-  margin: auto;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
 }
-.inv {
-  color: red;
-  font-weight: 700;
-  font-size: x-large;
+.invoice:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-.txt {
-  text-align: center;
-  margin-top: 2%;
-  color: var(--dark-grey);
-  font-weight: 700;
-}
-.company-logo-inv {
-  width: 25%;
-}
-.inv-txt {
-  float: right;
-  font-size: x-large;
-  color: var(--medium-grey);
-  font-weight: 700;
-}
-.img-inv-container {
-  padding: 0% 10% 0% 10%;
-}
-.inv-due {
-  text-align: center;
-  color: var(--medium-grey);
-  font-size: large;
-  font-weight: 700;
-}
-.sender {
-  font-size: x-large;
-  font-weight: 700;
-  color: var(--medium-grey);
-}
-.name {
-  font-size: medium;
-  color: red;
-}
-.inv-sender {
-  margin-left: 1%;
-  margin-top: 2%;
-  border: 2px solid var(--medium-grey);
-  border-radius: 5px;
-  padding: 5%;
-}
-.inv-tab {
-  margin-top: 2%;
-}
-.inv-receipt {
-  padding: 2% 5% 2% 5%;
-  float: right;
-}
-.receipt-txt {
-  color: var(--medium-grey);
-  font-size: medium;
-  text-align: center;
-}
-.notes-heading {
-  color: var(--medium-grey);
-}
-.notes-txt {
-  color: var(--medium-grey);
-  margin-top: 1%;
-}
-.invoice-print {
-  margin-left: 47%;
+.client-search {
   padding: 0.5% 2% 0.5% 2%;
-  background: var(--primary-blue);
-  cursor: pointer;
+  border: none;
+  background-color: rgb(220, 245, 237);
+  border-radius: 5px;
+  margin: 1%;
+}
+.search{
+  border: none;
+  background-color: var(--primary-blue);
   color: var(--white);
-  font-size: medium;
-  border-radius: 5%;
+  font-weight: 700;
+  padding: 0.5% 2% 0.5% 2%;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 1%;
+  }
+#client-search{
+  padding: 0.5% 2% 0.5% 2%;
+  border: none;
+  background-color: rgb(220, 245, 237);
+  border-radius: 5px;
+  margin: 1%;
 }

@@ -1,5 +1,9 @@
-const Productdata = [
+const ProductData = [
     {
         
     }
 ]
+const CateogryData = [{
+
+}]
+export {ProductData, CateogryData};

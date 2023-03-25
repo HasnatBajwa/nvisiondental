@@ -4,7 +4,7 @@ import './CreateOrderStyles.css'
 import CreateOrderInput from './CreateOrderInput';
 import Jaw from '../../../Assets/Jaw.jpg'
 import { Link } from 'react-router-dom';
-
+import ClientData from '../../Data/Clientdata/ClientData';
 const CreateOrder = () => {
     const {
         handleCreateOrder,
@@ -34,33 +34,70 @@ const CreateOrder = () => {
         setTotalPrice,
         setEnclosed,
         setNote,
-        OrderDate
+        setclientAddress,
+        OrderDate,
+
     } = CreateOrderInput();
     return (
         <>
             <div className="create-order-container">
+                <div className="create-invoice-details">
+                    <div className="create-order-container">
+                        <div className="invoice-container">
+                            <h3 className="invoice-heading">
+                                Invoice Details
+                            </h3>
+                            <div className="order-detail-input-container">
+                                <Grid container>
+                                    <Grid item xs={4} sm={4} md={4} lg={4}>
+                                        <p className="order-input-title">
+                                            Invoice No:
+                                        </p>
+                                        <input type="text" value={Invoice} className="order-detail-input" disabled />
+                                    </Grid>
+                                    <Grid item xs={4} sm={4} md={4} lg={4}>
+                                    <p className="order-input-title">
+                                            Order Date:
+                                        </p>
+                                    <input type="text" value={OrderDate} className="order-detail-input" disabled />
+
+                                    </Grid>
+                                    <Grid item xs={4} sm={4} md={4} lg={4}>
+                                    <button onClick={CreateInvoice} className='create-btn'>
+                                        Create Invoice
+                                    </button>
+
+                                    </Grid>
+                                </Grid>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
                 <div className="invoice-container">
                     <h3 className="invoice-heading">
-                        Order Details
+                        Client Details
                     </h3>
                     {/* Order Details Input */}
                     <div className="order-detail-input-container">
                         <Grid container >
-                            <Grid item xs={12} sm={12} md={12} lg={12}>
-                                <p className="order-input-title">Invoice No:</p>
-                                <input type="text" value={Invoice} className="order-detail-input" disabled={true} />
-                                <button className='create-inv' onClick={CreateInvoice}>Create Invoice</button>
-                            </Grid>
+
                             <Grid item xs={6} sm={6} md={6} lg={6}>
-                                <p className="order-input-title">
-                                    Client:
+                            <p className="order-input-title">
+                                    Client Name:
                                 </p>
                                 <select onChange={(e) => setClient(e.target.value)} disabled={Disable} name="Client" id="select">
                                     <option name='Client' value="Please Select Doctor Or Clinic" selected="true" disabled="disabled"> Please Select Doctor or Clinic</option>
-                                    <option name='Client' value="Hassan Dental clinic">HDC</option>
-                                    <option name='Client' value="Aziz Fatima Hospital">AFH</option>
-                                    <option name='Client' value="Tahir Dental Clinic">TDC</option>
+                                    {ClientData.map((data, i) => {
+                                        return (
+                                            <option key={i} name='Client'value={data.clientName}>{data.clientName}</option>
+                                        )
+                                    })}
                                 </select> &nbsp;
+                                <p className="order-input-title">
+                                    Client Address:
+                                </p>
+                                <input type="text" onChange={(e)=>{setclientAddress(e.target.value)}} className='order-detail-input' />
                                 <span className="order-input-title">Urgent Case:</span>
                                 <input onChange={(e) => setCaseType(e.target.value)} disabled={Disable} type="checkbox" value={"Urgent"} />
                             </Grid>
@@ -70,13 +107,7 @@ const CreateOrder = () => {
                                 </p>
                                 <input onChange={(e) => setPatient(e.target.value)} disabled={Disable} type="text" className="order-detail-input" />
                             </Grid>
-                            <Grid item xs={6} sm={6} md={6} lg={6}>
-                                <p className="order-input-title">
-                                    Ordered:
-                                </p>
-                                <input onChange={(e) => setOrderDate(e.target.value)} value={OrderDate} disabled
-                                 type="text" className="order-detail-input" />
-                            </Grid>
+
                             <Grid item xs={6} sm={6} md={6} lg={6}>
                                 <p className="order-input-title">
                                     Working Pan:
@@ -236,12 +267,12 @@ const CreateOrder = () => {
                             Add Note
                         </h3>
                         <div className="text-area-container">
-                            <textarea disabled={Disable} onChange={(e)=>setNote(e.target.value)} placeholder='Add Notes' className='text-area'cols="100" rows="25"/>
+                            <textarea disabled={Disable} onChange={(e) => setNote(e.target.value)} placeholder='Add Notes' className='text-area' cols="100" rows="25" />
 
                         </div>
                     </div>
                 </div>
-                <div className="button-container">
+                <div className="invoice-container">
                     <div className="btn">
                         <button disabled={Disable} className='create-btn' onClick={handleCreateOrder}>Save</button>
                         <Link to='/admin-dashboard/lab-slip'> <button className='create-btn' >Print Job Card</button></Link>
