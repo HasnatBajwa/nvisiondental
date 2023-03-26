@@ -54,3 +54,50 @@
   border-radius: 5px;
   margin: 1%;
 }
+.inv-address{
+  margin-top: 3%;
+}
+.inv-heading{
+  color: var(--medium-grey);
+  text-align: right;
+}
+.address-txt{
+  color: var(--dark-grey);
+  margin-top: 1%;
+  font-weight: 700;
+}
+.inv-no{
+  color: var(--medium-grey);
+  text-align: right;
+  font-weight: 900;
+}
+.bill-container{
+  margin-top: 5%;
+  padding: 2%;
+}
+.inv-bill-title{
+  color: var(--dark-grey);
+}
+.client-name{
+  color: var(--medium-grey);
+}
+.client-practice-name{
+  color: var(--primary-blue);
+  font-weight: 700;
+}
+.client-address{
+  color: var(--primary-red);
+  font-weight: 900;
+}
+.client-phone-no{
+  color: var(--medium-grey);
+  font-weight: 800;
+}
+.client-email{
+  color: var(--primary-black);
+  font-weight: 800;
+}
+.inv-header{
+  background-color: var(--light-grey);
+  padding: 2%;
+}
