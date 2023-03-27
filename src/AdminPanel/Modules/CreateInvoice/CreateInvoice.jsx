@@ -98,8 +98,7 @@ const CreateInvoice = () => {
                                                 </TableCell>
                                                 <TableCell>
                                                     <span className="action-btn" title='add to bill' onClick={() => showClientBill(data)} ><AddBoxIcon /> </span>
-                                                    <span className="action-btn" title='delete
-                                                    ' > <DeleteIcon /></span>
+                                                    <span className="action-btn" title='delete'> <DeleteIcon /></span>
                                                 </TableCell>
                                             </TableRow>
                                         </>
