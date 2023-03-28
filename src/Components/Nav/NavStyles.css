@@ -1,58 +1,82 @@
 :root {
   /* --primary-red: #7c1034; */
-  --primary-red: #413A6D;
-
+  --primary-red: #413a6d;
+  --gradient: linear-gradient(
+    90deg,
+    var(--primary-red) 15%,
+    var(--primary-blue) 90%
+  );
   --primary-black: #000000;
   --primary-blue: #29354a;
   --white: #f2f4f8;
   --medium-grey: #5c5c5c;
+  --light-grey: #ebebeb;
   --dark-grey: #141414;
+  /* --gradient: linear-gradient(
+      90deg,
+      rgba(124, 16, 52, 1) 15%,
+      rgba(41, 53, 74, 1) 90%
+    ); */
 }
-  .nav-container{
-    background-color: var(--white);
-    padding: 0.5% 0% 0.5% 0%;
+.nav {
+  background-color: var(--primary-black);
+}
+.nav-container {
+  padding: 1% 0% 1% 0%;
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+.company-logo {
+  width: 35%;
+  cursor: pointer;
+  padding-left: 10%;
+}
+.nav-link {
+  text-decoration: none;
+  color: var(--white);
+}
+.nav-link-container {
+  margin-top: 3%;
+  text-align: center;
+}
+.nav-links {
+  margin: 2%;
+  color: var(--white);
+  cursor: pointer;
+  font-weight: 600;
+}
+.contact-us-btn {
+  margin: 2%;
+  border: 2px solid var(--primary-blue);
+  background-color: var(--primary-red);
+  border-radius: 5px;
+  padding: 1% 2% 1% 2%;
+  cursor: pointer;
+  font-weight: 600;
+}
+.contact-us-btn:hover{
+  background-color: var(--light-grey);
+  color: var(--primary-red);
+}
+.nav-links:hover {
+  color: var(--primary-red);
+}
+/* Mobile Responsive Styles */
+@media only screen and (max-device-width: 768px) {
+  .company-logo {
+    display: block;
+    margin: auto;
+    padding: 0;
   }
-  .company-logo{
-    width: 25%;
-    cursor: pointer;
-    padding-left: 10%;
-   
-  }
-  .nav-link{
-    text-decoration: none;
-    color: var(--dark-grey);
-  }
-  .nav-link-container{
-    margin-top: 3%;
+  .nav-link-container {
+    padding: 1% 2% 1% 2%;
     text-align: center;
   }
-  .nav-links{
-    margin: 2%;
-    color: var(--dark-grey);
-    cursor: pointer;
-    font-weight: 600;
-   
-  
+  .nav-links {
+    text-align: center;
   }
-  .nav-links:hover{
-    color: var(--primary-red);
+  .nav-links {
+    font-size: 12px;
   }
-  /* Mobile Responsive Styles */
-  @media only screen and (max-device-width: 768px) {
-
-    .company-logo{
-        display: block;
-        margin: auto;
-        padding: 0;
-    }
-    .nav-link-container{
-       padding: 1% 2% 1% 2%;
-       text-align: center;
-    }
-    .nav-links{
-        text-align: center;
-    }
-    .nav-links{
-      font-size: 12px;
-    }
-  }
+}

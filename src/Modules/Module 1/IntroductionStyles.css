@@ -21,14 +21,23 @@
 .intro-txt-container {
   /* padding: 5% 20% 5% 20%; */
 }
+.title{
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}
 .intro-heading {
   color: var(--white);
   font-size: 50px;
   text-align: center;
 }
-.title {
- color: var(--white);
+.intro-heading-1{
+  color: var(--primary-red);
+  font-size: 30px;
+  text-align: center;
 }
+
 .intro-img {
   width: 30%;
   display: block;
@@ -39,6 +48,7 @@
   color: var(--white);
   margin-top: 2%;
   text-align: center;
+  padding: 1% 20% 2% 20%;
 }
 /* Mobile Responsive Settings */
 @media only screen and (max-device-width: 768px) {

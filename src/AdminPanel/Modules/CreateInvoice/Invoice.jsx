@@ -8,6 +8,7 @@ import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
+import OrderData from "../../Data/OrderTableData/OrderTableData";
 const Invoice = () => {
   return (
     <>
@@ -98,6 +99,38 @@ const Invoice = () => {
                   </TableRow>
                 </TableHead>
               </Table>
+              <TableBody>
+                                {OrderData.map((data, i) => {
+                                    return (
+                                        <>
+                                            <TableRow key={i} >
+                                                <TableCell className='in'>
+                                                    <span className="clientdata-txt"> {data.invoice}</span>
+                                                </TableCell>
+                                                <TableCell>
+                                                    <span className="clientdata-txt"> {data.client}</span>
+                                                </TableCell>
+                                                <TableCell>
+                                                    <span className="clientdata-txt"> {data.duedate}</span>
+                                                </TableCell>
+                                                <TableCell>
+                                                    <span className="clientdata-txt"> {data.orderdate}</span>
+                                                </TableCell>
+                                                <TableCell>
+                                                    <span className="clientdata-txt"> {data.perunitprice}</span>
+                                                </TableCell>
+                                                <TableCell>
+                                                    <span className="clientdata-txt"> {data.totalprice}</span>
+                                                </TableCell> 
+                                                <TableCell>
+                                                   <button>action</button>
+                                                </TableCell>
+                                            </TableRow>
+                                        </>
+                                    )
+                                })}
+
+                            </TableBody>
             </TableContainer>
           </Paper>
         </div>

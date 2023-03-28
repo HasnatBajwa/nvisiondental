@@ -9,7 +9,7 @@ const Experience = () => {
 
                 <Grid container justifyContent={'center'}>
                     <Grid item xs={12} sm={12} md={12} lg={12}>
-                        <HeadingTitle name={"Experience"} />
+                        <HeadingTitle name={"Get To Know Us"} />
                         <div data-aos='fade-up' className="experience-txt-container">
                             <h1 className="experience-heading">
                                 10+ Years of Quality Service in <span className="title-gradient">Dental Laboratory</span>
